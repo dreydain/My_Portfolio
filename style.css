@@ -29,7 +29,7 @@ img {
 	border: 8px solid #c8ff52;
 	top: 8%;
 	left: 30%;
-	width: 40%;
+	width: 45%;
 	height: 85%;
 	position: absolute;
 	z-index: 0;
@@ -41,4 +41,28 @@ img {
 	left: 25%;
 	position: absolute;
 	border: 5px solid #c8ff52;
+}
+
+.title-text {
+	top: 65%;
+	position: relative;
+	text-align: center;
+	font-family: 'Fredoka One', cursive;
+	text-shadow: rgb(200, 255, 82) 1px 0px 0px,
+		rgb(200, 255, 82) 0.540302px 0.841471px 0px,
+		rgb(200, 255, 82) -0.416147px 0.909297px 0px,
+		rgb(200, 255, 82) -0.989992px 0.14112px 0px,
+		rgb(200, 255, 82) -0.653644px -0.756802px 0px,
+		rgb(200, 255, 82) 0.283662px -0.958924px 0px,
+		rgb(200, 255, 82) 0.96017px -0.279415px 0px;
+}
+
+.divider {
+	top: 65%;
+	position: relative;
+	text-align: center;
+}
+
+#arrow {
+	margin-top: 12%;
 }
