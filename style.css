@@ -1,0 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 2000px;
+	background-image: linear-gradient(#ffff, #3ab1c8, #2772db, #122cec, #052d66);
+}
