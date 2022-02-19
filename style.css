@@ -7,3 +7,38 @@ body {
 	height: 2000px;
 	background-image: linear-gradient(#ffff, #3ab1c8, #2772db, #122cec, #052d66);
 }
+
+/* Header Styling */
+
+#parent {
+	position: relative;
+}
+.header-imgs {
+	display: flex;
+	flex-direction: row;
+}
+
+img {
+	width: 50%;
+	max-height: 50%;
+}
+
+.header-title {
+	background-image: linear-gradient(#3ab1c8, #2772db);
+	border-radius: 75%;
+	border: 8px solid #c8ff52;
+	top: 8%;
+	left: 30%;
+	width: 40%;
+	height: 85%;
+	position: absolute;
+	z-index: 0;
+}
+
+#portrait {
+	border-radius: 75%;
+	top: 8%;
+	left: 25%;
+	position: absolute;
+	border: 5px solid #c8ff52;
+}

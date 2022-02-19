@@ -1,3 +1,30 @@
+<!-- 
+    X Create Folder with html, css, and js files,
+    X create images folder and add images,
+    X create gradient background in body,
+
+    Create Header:
+    X create divs for content with temp id's, could switch to classes later,
+    X add images to header div,
+    research how to make website responsive,
+    X set images according to responsiveness
+    Figure out how to add the overlayed oval title
+    Add it to the header
+    adjust background image gradient if needed,
+
+    Create About:
+    add image,
+    add border,
+    adjust spacing and position
+    add title
+    add lorem ipsum
+    add two divs
+    adjust position and spacing
+    add color and border
+    add text content
+
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -8,17 +35,20 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<header>
-			Header Content Here
-			<div>
+		<header id="parent">
+			<div class="header-imgs">
 				<img src="images/code.jpg" alt="code" />
 				<img src="images/laptop.jpg" alt="laptop" />
 			</div>
-			<div>
+			<div class="header-imgs">
 				<img src="images/mug.jpg" alt="computer" />
 				<img src="images/code.jpg" alt="code" />
 			</div>
+			<div class="header-title">
+				<img id="portrait" src="images/portrait.jpg" alt="portrait" />
+			</div>
 		</header>
+
 		<div id="about">About Me Here</div>
 		<div id="portfolio">Portfolio Here</div>
 		<div id="connect">Connect Here</div>
