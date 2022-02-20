@@ -8,6 +8,24 @@ body {
 	background-image: linear-gradient(#ffff, #3ab1c8, #2772db, #122cec, #052d66);
 }
 
+/* NavBar Styling */
+
+#navBar {
+	display: flex;
+	flex-direction: row;
+	color: white;
+	background: black;
+}
+
+.navBtns {
+	margin: 1% 6% 1% 0%;
+	text-align: center;
+}
+
+#myName {
+	margin: 1% 30% 1% 10%;
+}
+
 /* Header Styling */
 
 #parent {
