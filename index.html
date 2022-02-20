@@ -27,15 +27,19 @@
     X adjust spacing
 
     Create About:
-    add image,
-    add border,
+    X create about-container div - nest 1 div and photo inside flex row. name div about
+    X in about div nest two divs. aboutme, and exp.
+    X in exp nest two divs education and skills. exp flex row
+
+    X add image,
+    X add border,
     adjust spacing and position
-    add title
-    add lorem ipsum
-    add two divs
+    X add title
+    X add lorem ipsum
+    X add two divs
     adjust position and spacing
-    add color and border
-    add text content
+    X add color and border
+    X add text content
 
 
 -->
@@ -71,16 +75,92 @@
 				<img src="images/mug.jpg" alt="computer" />
 				<img src="images/code.jpg" alt="code" />
 			</div>
-			<div class="header-title">
+			<div class="header-title-box">
 				<img id="portrait" src="images/portrait.jpg" alt="portrait" />
-				<h1 class="title-text">April Hughes</h1>
+				<h1 class="header-title titles">April Hughes</h1>
 				<h1 class="divider">&#8765;&#60; &sol; &#62;&#8764;</h1>
-				<h1 class="title-text">Software Developer</h1>
-				<h1 id="arrow" class="title-text">&#8744;</h1>
+				<h1 class="header-title titles">Software Developer</h1>
+				<h1 id="down-arrow" class="header-title titles">&#8744;</h1>
 			</div>
 		</header>
 
-		<div id="about">About Me Here</div>
+		<div id="about-container">
+			<div class="about">
+				<div class="about-me">
+					<h1 class="titles">About Me</h1>
+					<div class="about-content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
+							auctor eu augue ut. Et pharetra pharetra massa massa ultricies.
+							Enim sed faucibus turpis in. Ullamcorper dignissim cras tincidunt
+							lobortis feugiat vivamus at augue eget. Aliquet enim tortor at
+							auctor urna nunc id cursus. Lacus laoreet non curabitur gravida
+							arcu ac tortor dignissim. Posuere ac ut consequat semper viverra
+							nam libero justo. Sit amet luctus venenatis lectus magna fringilla
+							urna. Mattis nunc sed blandit libero volutpat sed cras ornare.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
+							auctor eu augue ut. Et pharetra pharetra massa massa ultricies.
+							Enim sed faucibus turpis in. Ullamcorper dignissim cras tincidunt
+							lobortis feugiat vivamus at augue eget. Aliquet enim tortor at
+							auctor urna nunc id cursus. Lacus laoreet non curabitur gravida
+							arcu ac tortor dignissim. Posuere ac ut consequat semper viverra
+							nam libero justo. Sit amet luctus venenatis lectus magna fringilla
+							urna. Mattis nunc sed blandit libero volutpat sed cras ornare.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae
+							auctor eu augue ut. Et pharetra pharetra massa massa ultricies.
+							Enim sed faucibus turpis in. Ullamcorper dignissim cras tincidunt
+						</p>
+					</div>
+				</div>
+				<div class="exp">
+					<h1 class="titles">Education</h1>
+					<h1 class="titles">Tech Skills</h1>
+				</div>
+				<div class="exp">
+					<div class="experience about-content">
+						<ul>
+							<li>
+								Coding Dojo: Web Fundamentals & Full Stack MERN 4/2021 - 7/2021
+							</li>
+							<li>
+								Udemy: MERN eCommerce from scratch <br />
+								10/2021 - 11/2021
+							</li>
+							<li>
+								The Complete JavaScript course 2022 <br />
+								2/2021 - Present
+							</li>
+							<li>
+								Node Express MongoDB & more The Complete bootcamp <br />
+								Scheduled for March
+							</li>
+						</ul>
+					</div>
+					<div class="experience about-content">
+						<ul>
+							<li>Front End: JavaScript | ES6 | HTML5 | CSS3</li>
+							<li>Back End: Node.js | MongoDB | MySQL | PHP</li>
+							<li>Frameworks: React | Express | Redux | jQuery</li>
+							<li>Other Libraries: Bootstrap | Material UI</li>
+							<li>Version Control: Git | GitHub</li>
+							<li>Other Tools: Figma, Balsamiq</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<img
+				class="about-content about-img"
+				src="images/outdoors.jpg"
+				alt="laptop and forest"
+			/>
+		</div>
 		<div id="portfolio">Portfolio Here</div>
 		<div id="connect">Connect Here</div>
 	</body>

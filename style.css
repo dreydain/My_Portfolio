@@ -3,16 +3,38 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
-	height: 2000px;
-	background-image: linear-gradient(#ffff, #3ab1c8, #2772db, #122cec, #052d66);
+	/* background-image: linear-gradient(#ffff, #3ab1c8, #2772db, #122cec, #052d66); */
+	height: fit-content;
+}
+
+img {
+	width: 50%;
+	max-height: 50%;
+}
+
+p {
+	margin: 2%;
+	font-family: 'Fredoka One', cursive;
+}
+
+.titles {
+	text-align: center;
+	font-family: 'Fredoka One', cursive;
+	text-shadow: rgb(200, 255, 82) 1px 0px 0px,
+		rgb(200, 255, 82) 0.540302px 0.841471px 0px,
+		rgb(200, 255, 82) -0.416147px 0.909297px 0px,
+		rgb(200, 255, 82) -0.989992px 0.14112px 0px,
+		rgb(200, 255, 82) -0.653644px -0.756802px 0px,
+		rgb(200, 255, 82) 0.283662px -0.958924px 0px,
+		rgb(200, 255, 82) 0.96017px -0.279415px 0px;
 }
 
 /* NavBar Styling */
 
 #navBar {
 	display: flex;
-	flex-direction: row;
 	color: white;
 	background: black;
 }
@@ -33,20 +55,14 @@ body {
 }
 .header-imgs {
 	display: flex;
-	flex-direction: row;
 }
 
-img {
-	width: 50%;
-	max-height: 50%;
-}
-
-.header-title {
+.header-title-box {
 	background-image: linear-gradient(#3ab1c8, #2772db);
 	border-radius: 75%;
 	border: 8px solid #c8ff52;
 	top: 8%;
-	left: 30%;
+	left: 27.5%;
 	width: 45%;
 	height: 85%;
 	position: absolute;
@@ -61,18 +77,9 @@ img {
 	border: 5px solid #c8ff52;
 }
 
-.title-text {
+.header-title {
 	top: 65%;
 	position: relative;
-	text-align: center;
-	font-family: 'Fredoka One', cursive;
-	text-shadow: rgb(200, 255, 82) 1px 0px 0px,
-		rgb(200, 255, 82) 0.540302px 0.841471px 0px,
-		rgb(200, 255, 82) -0.416147px 0.909297px 0px,
-		rgb(200, 255, 82) -0.989992px 0.14112px 0px,
-		rgb(200, 255, 82) -0.653644px -0.756802px 0px,
-		rgb(200, 255, 82) 0.283662px -0.958924px 0px,
-		rgb(200, 255, 82) 0.96017px -0.279415px 0px;
 }
 
 .divider {
@@ -81,6 +88,48 @@ img {
 	text-align: center;
 }
 
-#arrow {
+#down-arrow {
 	margin-top: 12%;
+}
+
+/* About Me Styling */
+
+#about-container {
+	padding-top: 10%;
+	display: flex;
+	background-image: linear-gradient(#3ab1c8, #2772db);
+}
+
+.about-content {
+	background-color: #f5ebeb;
+	border-radius: 8%;
+	border: 5px solid #c8ff52;
+	margin: 4% 2% 4% 2%;
+}
+
+.about-me {
+	margin-top: 8%;
+}
+
+.about-img {
+	max-width: 35%;
+}
+
+.exp {
+	display: flex;
+	justify-content: space-around;
+}
+
+.experience {
+	width: 45%;
+}
+
+ul {
+	list-style-type: none;
+	font-family: 'Fredoka One', cursive;
+	margin: 5%;
+}
+
+ul li {
+	margin-bottom: 5%;
 }
