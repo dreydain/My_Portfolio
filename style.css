@@ -4,18 +4,12 @@
 	box-sizing: border-box;
 }
 
-body {
-	/* background-image: linear-gradient(#ffff, #3ab1c8, #2772db, #122cec, #052d66); */
-	height: fit-content;
-}
-
-img {
-	width: 50%;
-	max-height: 50%;
-}
-
 p {
 	margin: 2%;
+	font-family: 'Fredoka One', cursive;
+}
+
+h2 {
 	font-family: 'Fredoka One', cursive;
 }
 
@@ -57,6 +51,11 @@ p {
 	display: flex;
 }
 
+.header-background {
+	width: 50%;
+	max-height: 50%;
+}
+
 .header-title-box {
 	background-image: linear-gradient(#3ab1c8, #2772db);
 	border-radius: 75%;
@@ -75,6 +74,7 @@ p {
 	left: 25%;
 	position: absolute;
 	border: 5px solid #c8ff52;
+	max-width: 50%;
 }
 
 .header-title {
@@ -102,9 +102,9 @@ p {
 
 .about-content {
 	background-color: #f5ebeb;
-	border-radius: 8%;
+	border-radius: 3em;
 	border: 5px solid #c8ff52;
-	margin: 4% 2% 4% 2%;
+	margin: 4% 2% 10% 2%;
 }
 
 .about-me {
@@ -132,4 +132,98 @@ ul {
 
 ul li {
 	margin-bottom: 5%;
+}
+
+/* Portfolio Styling */
+
+#portfolio-container {
+	padding: 5% 1% 3% 1%;
+
+	background-image: linear-gradient(#2772db, #122cec);
+}
+
+.portfolio-btns {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.btn {
+	width: 10%;
+	background-color: #3ab1c8;
+	border: 2px solid black;
+	border-radius: 1.5em;
+	margin: 2% 0%;
+	padding: 0.25%;
+	box-shadow: 0 0.15em;
+	text-align: center;
+}
+
+.btn.active {
+	border: 0.15em solid #c8ff52;
+	text-shadow: rgb(200, 255, 82) 1px 0px 0px,
+		rgb(200, 255, 82) 0.540302px 0.841471px 0px,
+		rgb(200, 255, 82) -0.416147px 0.909297px 0px,
+		rgb(200, 255, 82) -0.989992px 0.14112px 0px,
+		rgb(200, 255, 82) -0.653644px -0.756802px 0px,
+		rgb(200, 255, 82) 0.283662px -0.958924px 0px,
+		rgb(200, 255, 82) 0.96017px -0.279415px 0px;
+}
+
+.portfolio-cards {
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 3%;
+}
+
+.project {
+	display: flex;
+	flex-direction: row;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 70vh;
+	margin: 0.5em;
+	border-radius: 5em;
+	background-color: #f5ebeb;
+	border: #3ab1c8 solid 0.25em;
+	flex: 0.5;
+	position: relative;
+	transition: flex 0.7s ease-in;
+	box-shadow: 0 0.25em;
+}
+
+.project.active {
+	flex: 2;
+	padding: 1em;
+	border: black solid 0.25em;
+}
+
+.project.active img {
+	height: 95%;
+	width: 50%;
+	margin: 1em;
+	border: black solid 0.25em;
+}
+
+.project img {
+	height: 100%;
+	width: 100%;
+	border-radius: 5em;
+}
+
+.project-info {
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	width: 50%;
+}
+
+.project-info p {
+	margin-bottom: 3em;
+}
+
+.project.active .project-info {
+	opacity: 100;
+	position: relative;
+	margin: 5em 0em;
 }
