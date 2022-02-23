@@ -4,13 +4,14 @@
 	box-sizing: border-box;
 }
 
-p {
-	margin: 2%;
-	font-family: 'Fredoka One', cursive;
+body {
+	font-family: 'Kalam', cursive;
+	font-weight: bold;
+	font-size: large;
 }
 
-h2 {
-	font-family: 'fantasy';
+p {
+	margin: 2%;
 }
 
 .green-shadow {
@@ -25,11 +26,6 @@ h2 {
 
 .titles {
 	text-align: center;
-	font-family: 'Fredoka One', cursive;
-}
-
-.fredoka {
-	font-family: 'Fredoka One', cursive;
 }
 
 /* NavBar Styling */
@@ -141,7 +137,6 @@ h2 {
 
 ul {
 	list-style-type: none;
-	font-family: 'Fredoka One', cursive;
 	margin: 5%;
 }
 
@@ -153,7 +148,6 @@ ul li {
 
 #portfolio-container {
 	padding: 5% 1% 3% 1%;
-
 	background-image: linear-gradient(#2772db, #122cec);
 }
 
@@ -240,7 +234,7 @@ ul li {
 .project.active .project-info {
 	opacity: 100;
 	position: relative;
-	margin: 5em 0em;
+	margin: 2em 0em;
 }
 
 /* Connect Styling */
@@ -255,8 +249,11 @@ ul li {
 }
 
 .connect-info h2 {
-	color: #ffffff;
 	font-size: xx-large;
+}
+
+.black-shadow {
+	color: #ffffff;
 	text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px,
 		rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px,
 		rgb(0, 0, 0) -0.832294px 1.81859px 0px,
@@ -293,6 +290,6 @@ ul li {
 }
 
 .social-links img {
-	max-width: 35%;
-	margin: 3%;
+	max-width: 70%;
+	margin: 5% 0 3% 25%;
 }
