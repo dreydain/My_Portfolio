@@ -10,10 +10,6 @@ body {
 	font-size: large;
 }
 
-p {
-	margin: 2%;
-}
-
 .green-shadow {
 	text-shadow: rgb(200, 255, 82) 1px 0px 0px,
 		rgb(200, 255, 82) 0.540302px 0.841471px 0px,
@@ -118,6 +114,10 @@ p {
 	margin: 1% 2% 5% 2%;
 }
 
+.about-content p {
+	margin: 2%;
+}
+
 .about-me {
 	margin-top: 0%;
 }
@@ -165,6 +165,10 @@ ul li {
 	padding: 0.25%;
 	box-shadow: 0 0.15em;
 	text-align: center;
+}
+
+.btn p {
+	margin-top: 0.5em;
 }
 
 .btn.active {
