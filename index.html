@@ -6,10 +6,14 @@
     research how to make website responsive    
     align Navbar div to top
 	Add project slide shows
-    
+	create active class for navbar.
 
-    
-
+	Create Connect:
+	create 1 parent div with 2 children divs for text content parant div has display flex
+	create 1 div for social buttons
+	Use titles class,
+	and create white text with black shadow.
+	add github and linked in logos with anchor tags to my profiles. 
 
 -->
 <!DOCTYPE html>
@@ -22,15 +26,16 @@
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Fredoka+One"
+			href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
 	<body>
 		<div id="navBar">
 			<h2 id="myName">April Hughes</h2>
-			<h2 class="navBtns">About</h2>
+			<h2 class="navBtns active">About</h2>
 			<h2 class="navBtns">Portfolio</h2>
 			<h2 class="navBtns">Connect</h2>
 			<h2 class="navBtns">Resume</h2>
@@ -46,17 +51,19 @@
 			</div>
 			<div class="header-title-box">
 				<img id="portrait" src="images/portrait.jpg" alt="portrait" />
-				<h1 class="header-title titles">April Hughes</h1>
+				<h1 class="header-title titles green-shadow">April Hughes</h1>
 				<h1 class="divider">&#8765;&#60; &sol; &#62;&#8764;</h1>
-				<h1 class="header-title titles">Software Developer</h1>
-				<h1 id="down-arrow" class="header-title titles">&#8744;</h1>
+				<h1 class="header-title titles green-shadow">Software Developer</h1>
+				<h1 id="down-arrow" class="header-title titles green-shadow">
+					&#8744;
+				</h1>
 			</div>
 		</header>
 
 		<div id="about-container">
 			<div class="about">
 				<div class="about-me">
-					<h1 class="titles">About Me</h1>
+					<h1 class="titles green-shadow">About Me</h1>
 					<div class="about-content">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -89,8 +96,8 @@
 					</div>
 				</div>
 				<div class="exp">
-					<h1 class="titles">Education</h1>
-					<h1 class="titles">Tech Skills</h1>
+					<h1 class="titles green-shadow">Education</h1>
+					<h1 class="titles green-shadow">Tech Skills</h1>
 				</div>
 				<div class="exp">
 					<div class="experience about-content">
@@ -131,7 +138,7 @@
 			/>
 		</div>
 		<div id="portfolio-container">
-			<h1 class="titles">My Portfolio</h1>
+			<h1 class="titles green-shadow">My Portfolio</h1>
 			<div class="portfolio-btns">
 				<div class="btn">
 					<p>Herbal eCommerce</p>
@@ -149,7 +156,7 @@
 			<div class="portfolio-cards">
 				<div id="herbal-eCommerce" class="project">
 					<div class="project-info">
-						<h2 class="titles">Herbal eCommerce</h2>
+						<h2 class="titles green-shadow">Herbal eCommerce</h2>
 						<p>
 							A business manager that manages products, product inventory,
 							orders, and workorders for manufacturing for multiple businesses.
@@ -184,7 +191,7 @@
 				</div>
 				<div id="model-trains" class="project active">
 					<div class="project-info">
-						<h2 class="titles">Model Trains</h2>
+						<h2 class="titles green-shadow">Model Trains</h2>
 						<p>
 							A business manager that manages products, product inventory,
 							orders, and workorders for manufacturing for multiple businesses.
@@ -215,7 +222,7 @@
 				</div>
 				<div id="training-project" class="project">
 					<div class="project-info">
-						<h2 class="titles">Training Project</h2>
+						<h2 class="titles green-shadow">Training Project</h2>
 						<p>
 							A business manager that manages products, product inventory,
 							orders, and workorders for manufacturing for multiple businesses.
@@ -246,7 +253,7 @@
 				</div>
 				<div id="my-portfolio" class="project">
 					<div class="project-info">
-						<h2 class="titles">My Portfolio</h2>
+						<h2 class="titles green-shadow">My Portfolio</h2>
 						<p>
 							A business manager that manages products, product inventory,
 							orders, and workorders for manufacturing for multiple businesses.
@@ -267,7 +274,40 @@
 				</div>
 			</div>
 		</div>
-		<div id="connect">Connect Here</div>
+		<div id="connect-container">
+			<div class="connect-info">
+				<div class="contact">
+					<h2 class="spacing">Connect with me:</h2>
+					<h1 class="green-shadow fredoka">Location:</h1>
+					<h2 class="spacing">Seattle, WA.</h2>
+					<h1 class="green-shadow fredoka">Email:</h1>
+					<h2 class="spacing">ahughes0389@gmail.com</h2>
+					<h1 class="green-shadow fredoka">Phone:</h1>
+					<h2 class="spacing">360-488-6601</h2>
+				</div>
+				<div class="seeking">
+					<h1 class="green-shadow fredoka">I'm Seeking:</h1>
+					<h2 class="fredoka spacing">
+						Junior or Entry Level Developer Roles <br />
+						Full Time or Part Time <br />
+						Contract, Permanent, W2 <br />
+						Front-end, Back-end or Full-Stack <br />
+						MERN Stack, JavaScript, React, Node
+					</h2>
+					<h1 class="green-shadow fredoka">I want to Learn:</h1>
+					<h2 class="fredoka spacing">
+						LESS/SCSS/SASS/SAAS <br />
+						Agile/Scrum, TypeScript <br />
+						Redux, AWS, Cloud, MySQL <br />
+						and React Native
+					</h2>
+				</div>
+			</div>
+			<div class="social-links">
+				<img src="images/linkedin-sign.png" alt="LinkedIn Logo" />
+				<img src="images/github.png" alt="GitHub Logo" />
+			</div>
+		</div>
 	</body>
 	<script src="script.js"></script>
 </html>

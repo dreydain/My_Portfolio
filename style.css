@@ -10,12 +10,10 @@ p {
 }
 
 h2 {
-	font-family: 'Fredoka One', cursive;
+	font-family: 'fantasy';
 }
 
-.titles {
-	text-align: center;
-	font-family: 'Fredoka One', cursive;
+.green-shadow {
 	text-shadow: rgb(200, 255, 82) 1px 0px 0px,
 		rgb(200, 255, 82) 0.540302px 0.841471px 0px,
 		rgb(200, 255, 82) -0.416147px 0.909297px 0px,
@@ -23,6 +21,15 @@ h2 {
 		rgb(200, 255, 82) -0.653644px -0.756802px 0px,
 		rgb(200, 255, 82) 0.283662px -0.958924px 0px,
 		rgb(200, 255, 82) 0.96017px -0.279415px 0px;
+}
+
+.titles {
+	text-align: center;
+	font-family: 'Fredoka One', cursive;
+}
+
+.fredoka {
+	font-family: 'Fredoka One', cursive;
 }
 
 /* NavBar Styling */
@@ -38,8 +45,16 @@ h2 {
 	text-align: center;
 }
 
+.navBtns.active {
+	color: #c8ff52;
+}
+
 #myName {
 	margin: 1% 30% 1% 10%;
+}
+
+#myName.active {
+	color: #c8ff52;
 }
 
 /* Header Styling */
@@ -226,4 +241,58 @@ ul li {
 	opacity: 100;
 	position: relative;
 	margin: 5em 0em;
+}
+
+/* Connect Styling */
+
+#connect-container {
+	padding: 5% 2% 3% 3%;
+	background-image: linear-gradient(#122cec, #2772db);
+}
+
+.connect-info {
+	display: flex;
+}
+
+.connect-info h2 {
+	color: #ffffff;
+	font-size: xx-large;
+	text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px,
+		rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px,
+		rgb(0, 0, 0) -0.832294px 1.81859px 0px,
+		rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px,
+		rgb(0, 0, 0) -1.87291px -0.701566px 0px,
+		rgb(0, 0, 0) -1.30729px -1.5136px 0px,
+		rgb(0, 0, 0) -0.421592px -1.95506px 0px,
+		rgb(0, 0, 0) 0.567324px -1.91785px 0px,
+		rgb(0, 0, 0) 1.41734px -1.41108px 0px,
+		rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+}
+
+.spacing {
+	margin-top: 1%;
+	margin-bottom: 4%;
+}
+
+.contact {
+	width: 50%;
+}
+
+.seeking {
+	text-align: center;
+	width: 50%;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	margin: 5% 0 1% 35%;
+	max-width: 25%;
+	border-radius: 20em;
+	background-color: #f5ebeb;
+}
+
+.social-links img {
+	max-width: 35%;
+	margin: 3%;
 }
