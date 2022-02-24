@@ -4,16 +4,9 @@
     Adjust font size for navbar, name smaller and navBtns change to hamburger
 	portfolio bottons will need adjustment for smaller screen
     research how to make website responsive    
-    align Navbar div to top
 	Add project slide shows
-	create active class for navbar.
 
-	Create Connect:
-	create 1 parent div with 2 children divs for text content parant div has display flex
-	create 1 div for social buttons
-	Use titles class,
-	and create white text with black shadow.
-	add github and linked in logos with anchor tags to my profiles. 
+
 
 -->
 <!DOCTYPE html>
@@ -33,15 +26,21 @@
 	</head>
 	<body>
 		<div id="navBar">
-			<h2 id="myName">April Hughes</h2>
-			<h2 class="navBtns active">About</h2>
-			<h2 class="navBtns">Portfolio</h2>
-			<h2 class="navBtns">Connect</h2>
+			<a class="myName" href="#parent"
+				><h2 id="myName" class="navBtns">April Hughes</h2></a
+			>
+			<a href="#about-container"><h2 id="about" class="navBtns">About</h2></a>
+			<a href="#portfolio-container"
+				><h2 id="portfolio" class="navBtns">Portfolio</h2></a
+			>
+			<a href="#connect-container"
+				><h2 id="connect" class="navBtns">Connect</h2></a
+			>
 			<a href="https://1drv.ms/w/s!AsiItZSXLR3-gw2gqLe8K42To7RO?e=doNWD9">
 				<h2 class="navBtns">Resume</h2>
 			</a>
 		</div>
-		<div class="header" id="parent">
+		<header id="parent">
 			<div class="header-imgs">
 				<img class="header-background" src="images/code.jpg" alt="code" />
 				<img class="header-background" src="images/laptop.jpg" alt="laptop" />
@@ -59,7 +58,7 @@
 					&#8744;
 				</h1>
 			</div>
-		</div>
+		</header>
 
 		<div id="about-container">
 			<div class="about">
@@ -141,16 +140,16 @@
 		<div id="portfolio-container">
 			<h1 class="titles green-shadow">My Portfolio</h1>
 			<div class="portfolio-btns">
-				<div class="btn">
+				<div class="btn herbal-eCommerce">
 					<p>Herbal eCommerce</p>
 				</div>
-				<div class="btn active">
+				<div class="btn model-trains">
 					<p>Model Trains</p>
 				</div>
-				<div class="btn">
+				<div class="btn training-project">
 					<p>Training Project</p>
 				</div>
-				<div class="btn">
+				<div class="btn my-portfolio">
 					<p>My Portfolio</p>
 				</div>
 			</div>
@@ -173,6 +172,8 @@
 							MERN Stack (MongoDB, Express.js, React.js, Node.js), Redux,
 							Bootstrap, Mongoose, and NPM.
 						</p>
+						<a href="https://github.com/dreydain/eCommerce">Code</a>
+						<a href="http://18.236.93.230/">Site</a>
 					</div>
 					<img src="images/HE_Cover.jpg" alt="Herbal-ecommerce-project" />
 					<!--<img src="images/HE_1.png" alt="Herbal-eCommerce-project" />
@@ -190,7 +191,7 @@
 					<img src="images/HE_13.png" alt="Herbal-eCommerce-project" />
 					<img src="images/HE_14.png" alt="Herbal-eCommerce-project" /> -->
 				</div>
-				<div id="model-trains" class="project active">
+				<div id="model-trains" class="project">
 					<div class="project-info">
 						<h2 class="titles green-shadow">Model Trains</h2>
 						<p>
@@ -208,6 +209,7 @@
 							MERN Stack (MongoDB, Express.js, React.js, Node.js), Redux,
 							Bootstrap, Mongoose, and NPM.
 						</p>
+						<a href="https://github.com/dreydain/Model_Trains">Code</a>
 					</div>
 					<img src="images/MT_Cover.jpg" alt="model-trains-project" />
 					<!-- <img src="images/MT_1.png" alt="model-trains-project" />
@@ -239,6 +241,7 @@
 							MERN Stack (MongoDB, Express.js, React.js, Node.js), Redux,
 							Bootstrap, Mongoose, and NPM.
 						</p>
+						<a href="https://github.com/JohnWilder406/TrainingProj">Code</a>
 					</div>
 					<img src="images/TP_Cover.jpg" alt="training-project-project" />
 					<!-- <img src="images/TP_1.png" alt="training-project-project" />
@@ -270,6 +273,7 @@
 							MERN Stack (MongoDB, Express.js, React.js, Node.js), Redux,
 							Bootstrap, Mongoose, and NPM.
 						</p>
+						<a href="https://github.com/dreydain/My_Portfolio">Code</a>
 					</div>
 					<img src="images/Portfolio_Cover.jpg" alt="me" />
 				</div>
