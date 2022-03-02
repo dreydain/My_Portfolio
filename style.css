@@ -208,6 +208,7 @@ ul li {
 	position: relative;
 	transition: flex 0.7s ease-in;
 	box-shadow: 0 0.25em;
+	cursor: pointer;
 }
 
 .project a {
@@ -221,6 +222,10 @@ ul li {
 	flex: 2;
 	padding: 1em;
 	border: black solid 0.25em;
+}
+
+.hide {
+	display: none;
 }
 
 .project.active img {
