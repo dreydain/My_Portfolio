@@ -1,13 +1,8 @@
 'use strict';
 
-// 3. Bonus addition:
-//A. CSS on hover change color of social btns to blue or green
-
-// 4. Make website responsive:
-
 //NavBar Active Classes
-//add logic for navbuttons to light up green when scrolling.
 const btns = document.querySelectorAll('.navBtns');
+console.log(btns);
 
 btns.forEach((btn) => {
 	btn.addEventListener('click', () => {
