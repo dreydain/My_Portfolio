@@ -250,7 +250,7 @@ ul li {
 }
 
 .project-info p {
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 }
 
 .project.active .project-info {
@@ -307,7 +307,6 @@ ul li {
 	justify-content: center;
 	margin: 2% 0 1% 35%;
 	max-width: 20%;
-	height: 8em;
 	border-radius: 20em;
 	background-color: #f5ebeb;
 	position: relative;
