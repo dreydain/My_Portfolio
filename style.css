@@ -39,14 +39,45 @@ html {
 	top: 0;
 	width: 100%;
 	z-index: 1;
-	padding-left: 15em;
+	padding: 0.5em;
+}
+
+.menu {
+	flex: 1;
+	text-align: right;
+}
+
+.menu ul li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 3em;
+	margin-top: 0;
+}
+
+.mobile {
+	margin: 0;
 }
 
 #navBar a {
 	color: inherit;
 	text-decoration: inherit;
-	margin: 0.5% 12% 0 0;
 }
+
+#navBar a:hover {
+	color: #c8ff52;
+}
+
+#navBar i {
+	color: white;
+	align-self: center;
+	display: none;
+	cursor: pointer;
+}
+
+/* #myName {
+	width: fit-content;
+	margin-right: 25em;
+} */
 
 /* Header Styling */
 
@@ -136,12 +167,12 @@ html {
 	width: 45%;
 }
 
-ul {
+.experience ul {
 	list-style-type: none;
 	margin: 5%;
 }
 
-ul li {
+.experience ul li {
 	margin-bottom: 5%;
 }
 
@@ -325,4 +356,71 @@ ul li {
 	background-color: #28c2ff;
 	border-radius: 100%;
 	transition: 2s ease;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+@media only screen and (max-width: 576px) {
+	#navBar {
+		color: white;
+		background: black;
+		height: 2em;
+		position: fixed;
+		top: 0;
+		max-width: 100%;
+		z-index: 1;
+		padding: 0.5em;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.menu ul {
+		width: 100%;
+		height: fit-content;
+		background-color: black;
+		position: absolute;
+		top: 2em;
+		right: 0;
+		z-index: 2;
+	}
+
+	.menu ul li {
+		display: block;
+		margin: 0.5em 2em 0.5em 0;
+	}
+
+	#navBar i {
+		color: white;
+		display: block;
+	}
+
+	/* .menu {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10.25em;
+		padding-left: 2.5em;
+		text-align: center;
+		height: fit-content;
+		background-color: black;
+	}
+
+	.mobile {
+		color: inherit;
+		text-decoration: inherit;
+		display: block;
+		margin: 0.25em;
+		font-size: large;
+	}
+
+	
+
+	#myName {
+		width: fit-content;
+		color: #c8ff52;
+		color: inherit;
+		text-decoration: inherit;
+		font-size: large;
+		display: block;
+		margin: 0.5em 14em 0 0.5em;
+	} */
 }

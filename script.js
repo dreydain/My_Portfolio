@@ -2,6 +2,10 @@
 
 //NavBar Active Classes
 const btns = document.querySelectorAll('.navBtns');
+const menuItems = document.querySelector('.menu');
+const navBtns = document.querySelector('.menu ul');
+const menuButton = document.getElementById('menuBtn');
+menuItems.style.display = 'none';
 console.log(btns);
 
 btns.forEach((btn) => {
@@ -16,6 +20,14 @@ function removeActiveClasses() {
 		btn.classList.remove('active');
 	});
 }
+
+menuButton.addEventListener('click', () => {
+	if (menuItems.style.display === 'none') {
+		menuItems.style.display = 'block';
+	} else {
+		menuItems.style.display = 'none';
+	}
+});
 
 //Portfolio Projects Functionality
 const projects = document.querySelectorAll('.project');
