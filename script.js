@@ -5,7 +5,8 @@ const btns = document.querySelectorAll('.navBtns');
 const menuItems = document.querySelector('.menu');
 const navBtns = document.querySelector('.menu ul');
 const menuButton = document.getElementById('menuBtn');
-menuItems.style.display = 'none';
+menuItems.style.maxHeight = '0px';
+
 console.log(btns);
 
 btns.forEach((btn) => {
@@ -22,10 +23,10 @@ function removeActiveClasses() {
 }
 
 menuButton.addEventListener('click', () => {
-	if (menuItems.style.display === 'none') {
-		menuItems.style.display = 'block';
+	if (menuItems.style.maxHeight === '0px') {
+		menuItems.style.maxHeight = '250px';
 	} else {
-		menuItems.style.display = 'none';
+		menuItems.style.maxHeight = '0px';
 	}
 });
 
