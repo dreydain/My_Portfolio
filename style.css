@@ -7,7 +7,7 @@
 body {
 	font-family: 'Kalam', cursive;
 	font-weight: bold;
-	font-size: large;
+	font-size: medium;
 }
 
 html {
@@ -129,28 +129,32 @@ html {
 
 #about-container {
 	padding-top: 5%;
-	display: flex;
 	background-image: linear-gradient(#3ab1c8, #2772db);
 }
 
 .about-content {
 	background-color: #f5ebeb;
-	border-radius: 3em;
+	border-radius: 2em;
 	border: 5px solid #c8ff52;
-	margin: 1% 2% 5% 2%;
+	margin-bottom: 5%;
+	width: 60%;
+	height: fit-content;
 }
 
 .about-content p {
-	margin: 2%;
+	margin: 2.5%;
 }
 
 .about-me {
+	display: flex;
+	justify-content: space-evenly;
 	margin-top: 0%;
 }
 
 .about-img {
-	max-width: 40%;
-	margin-top: 3.5em;
+	height: 80vh;
+	border-radius: 2em;
+	border: 5px solid #c8ff52;
 }
 
 .exp {
@@ -159,7 +163,7 @@ html {
 }
 
 .experience {
-	width: 45%;
+	width: 40%;
 }
 
 .experience ul {
@@ -184,12 +188,12 @@ html {
 }
 
 .btn {
-	width: 10%;
+	width: fit-content;
 	background-color: #3ab1c8;
 	border: 2px solid black;
-	border-radius: 1.5em;
+	border-radius: 0.75em;
 	margin: 2% 0%;
-	padding: 0.25%;
+	padding: 0.5%;
 	box-shadow: 0 0.15em;
 	text-align: center;
 	cursor: pointer;
@@ -219,12 +223,13 @@ html {
 .project {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 65vh;
-	margin: 0.5em;
-	border-radius: 5em;
+	margin: 0.25em;
+	border-radius: 2em;
 	background-color: #f5ebeb;
 	border: #3ab1c8 solid 0.25em;
 	flex: 0.5;
@@ -242,8 +247,8 @@ html {
 }
 
 .project.active {
-	flex: 2;
-	padding: 1em;
+	flex: 8;
+	padding: 0.5em;
 	border: black solid 0.25em;
 }
 
@@ -252,28 +257,23 @@ html {
 }
 
 .project.active img {
-	height: 95%;
-	width: 50%;
-	margin: 1em;
+	height: 98%;
+	width: 35%;
+	margin: 0.25em;
 	border: black solid 0.25em;
 }
 
 .project img {
 	height: 100%;
 	width: 100%;
-	border-radius: 5em;
+	border-radius: 2em;
 }
 
 .project-info {
 	position: absolute;
 	text-align: center;
 	opacity: 0;
-	width: 50%;
-}
-
-.project.active .project-info {
-	opacity: 1;
-	transition: opacity 0.5s ease-in 0.6s;
+	width: 60%;
 }
 
 .project-info p {
@@ -283,7 +283,8 @@ html {
 .project.active .project-info {
 	opacity: 100;
 	position: relative;
-	margin: 2em 0em;
+	margin: 1em 2em;
+	transition: opacity 0.5s ease-in 0.6s;
 }
 
 /* Connect Styling */
@@ -298,7 +299,7 @@ html {
 }
 
 .connect-info h2 {
-	font-size: xx-large;
+	font-size: x-larger;
 }
 
 .black-shadow {
@@ -473,5 +474,134 @@ html {
 
 	.experience ul li {
 		margin-bottom: 5%;
+	}
+
+	/* Portfolio Styling */
+
+	#portfolio-container {
+		padding: 5% 1% 3% 1%;
+		background-image: linear-gradient(#2772db, #122cec);
+		overflow: hidden;
+	}
+
+	.portfolio-btns {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	.btn {
+		width: fit-content;
+		background-color: #3ab1c8;
+		border: 2px solid black;
+		border-radius: 0.75em;
+		margin: 2% 0%;
+		padding: 0.25%;
+		box-shadow: 0 0.1em;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.btn p {
+		margin: 0.5em;
+		font-size: small;
+		font-weight: bold;
+	}
+
+	.btn.active {
+		border: 0.15em solid #c8ff52;
+		text-shadow: rgb(200, 255, 82) 1px 0px 0px,
+			rgb(200, 255, 82) 0.540302px 0.841471px 0px,
+			rgb(200, 255, 82) -0.416147px 0.909297px 0px,
+			rgb(200, 255, 82) -0.989992px 0.14112px 0px,
+			rgb(200, 255, 82) -0.653644px -0.756802px 0px,
+			rgb(200, 255, 82) 0.283662px -0.958924px 0px,
+			rgb(200, 255, 82) 0.96017px -0.279415px 0px;
+	}
+
+	.portfolio-cards {
+		display: flex;
+		transform: translateX(0);
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.project {
+		width: 95%;
+		height: 85vh;
+		border-radius: 2em;
+		overflow: hidden;
+		/* display: flex;
+		flex-direction: row;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin: 0.6em;
+		max-width: 0;
+		background-color: #f5ebeb;
+		border: #3ab1c8 solid 0.2em;
+		flex: 0.5;
+		position: relative;
+		transition: flex 0.7s ease-in;
+		box-shadow: 0 0.1em;
+		cursor: pointer;
+		*/
+	}
+
+	.project a {
+		color: #122cec;
+		text-decoration: inherit;
+		margin: 0 2em;
+		font-size: medium;
+	}
+
+	.project.active {
+		flex: 10;
+		padding: 0.1em;
+		border: black solid 0.25em;
+		min-width: 95%;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.project.active img {
+		height: 100%;
+		width: 48%;
+		margin: 0.05em;
+		border: black solid 0.25em;
+	}
+
+	.project img {
+		height: 100%;
+		width: 100%;
+		border-radius: 2em;
+	}
+
+	.project-info {
+		position: absolute;
+		text-align: center;
+		opacity: 0;
+		width: 50%;
+	}
+
+	.project.active .project-info {
+		opacity: 1;
+		transition: opacity 0.5s ease-in 0.6s;
+	}
+
+	.project-info p {
+		margin-bottom: 1em;
+		font-size: medium;
+	}
+
+	.project-info h2 {
+		font-size: larger;
+	}
+
+	.project.active .project-info {
+		opacity: 100;
+		position: relative;
+		margin: 0.25em;
 	}
 }

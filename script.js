@@ -5,9 +5,32 @@ const btns = document.querySelectorAll('.navBtns');
 const menuItems = document.querySelector('.menu');
 const navBtns = document.querySelector('.menu ul');
 const menuButton = document.getElementById('menuBtn');
+const projects = document.querySelectorAll('.project');
+const buttons = document.querySelectorAll('.btn');
+
+const ecommerceImages = document.querySelectorAll('.ecommerce');
+const trainsImages = document.querySelectorAll('.trains');
+const trainingImages = document.querySelectorAll('.training');
+const userScreen = window.innerWidth;
 menuItems.style.maxHeight = '0px';
 
-console.log(btns);
+console.log(userScreen);
+
+function projectManageHide() {
+	if (userScreen <= 690) {
+		projects.forEach((project) => {
+			console.log(project.classList.value);
+
+			if (project.classList.value === 'project hide active') {
+				project.classList.remove('hide');
+			} else {
+				project.classList.add('hide');
+			}
+		});
+	}
+}
+
+projectManageHide();
 
 btns.forEach((btn) => {
 	btn.addEventListener('click', () => {
@@ -24,19 +47,13 @@ function removeActiveClasses() {
 
 menuButton.addEventListener('click', () => {
 	if (menuItems.style.maxHeight === '0px') {
-		menuItems.style.maxHeight = '250px';
+		menuItems.style.maxHeight = '20px';
 	} else {
 		menuItems.style.maxHeight = '0px';
 	}
 });
 
 //Portfolio Projects Functionality
-const projects = document.querySelectorAll('.project');
-const buttons = document.querySelectorAll('.btn');
-
-const ecommerceImages = document.querySelectorAll('.ecommerce');
-const trainsImages = document.querySelectorAll('.trains');
-const trainingImages = document.querySelectorAll('.training');
 
 let idx = 0;
 const time = 2500;
@@ -103,6 +120,7 @@ buttons.forEach((button, index) => {
 		removeActivePortfolioClasses();
 		button.classList.add('active');
 		projects[index].classList.add('active');
+		projectManageHide();
 		imgSlideShow();
 	});
 });
@@ -114,6 +132,7 @@ projects.forEach((project, index) => {
 		removeActivePortfolioClasses();
 		project.classList.add('active');
 		buttons[index].classList.add('active');
+		projectManageHide();
 		imgSlideShow();
 	});
 });
