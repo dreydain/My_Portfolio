@@ -534,4 +534,18 @@ html {
 		position: relative;
 		margin: 0.25em;
 	}
+
+	/* Social Links Responsive styling */
+
+	.connect-info h1 {
+		font-size: x-large;
+	}
+	.connect-info h2 {
+		font-size: larger;
+	}
+
+	.social-links {
+		max-width: 20%;
+		max-height: 3.5em;
+	}
 }
