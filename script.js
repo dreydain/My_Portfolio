@@ -14,14 +14,17 @@ const trainingImages = document.querySelectorAll('.training');
 const userScreen = window.innerWidth;
 menuItems.style.maxHeight = '0px';
 
-console.log(userScreen);
+let idx = 0;
+const time = 2500;
+setInterval(imgSlideShow, time);
 
 function projectManageHide() {
-	if (userScreen <= 690) {
+	if (userScreen <= 700) {
 		projects.forEach((project) => {
-			console.log(project.classList.value);
-
-			if (project.classList.value === 'project hide active') {
+			if (
+				project.classList.value === 'project hide active' ||
+				project.classList.value === 'project active'
+			) {
 				project.classList.remove('hide');
 			} else {
 				project.classList.add('hide');
@@ -47,7 +50,7 @@ function removeActiveClasses() {
 
 menuButton.addEventListener('click', () => {
 	if (menuItems.style.maxHeight === '0px') {
-		menuItems.style.maxHeight = '20px';
+		menuItems.style.maxHeight = 'fit-content';
 	} else {
 		menuItems.style.maxHeight = '0px';
 	}
@@ -55,15 +58,14 @@ menuButton.addEventListener('click', () => {
 
 //Portfolio Projects Functionality
 
-let idx = 0;
-const time = 2500;
-setInterval(imgSlideShow, time);
-
 function runSlides(imagesArr) {
-	if (idx === imagesArr.length - 1) {
-		imagesArr[idx].classList.add('hide');
-		imagesArr[0].classList.remove('hide');
-		idx = 0;
+	if (imagesArr.length > 0) {
+		if (idx === imagesArr.length - 1) {
+			imagesArr[idx].classList.add('hide');
+			imagesArr[0].classList.remove('hide');
+
+			idx = 0;
+		}
 	}
 
 	imagesArr[idx].classList.add('hide');
@@ -81,19 +83,28 @@ function displayCover(images) {
 // Image Slide Show interval function
 function imgSlideShow() {
 	//if active project is equal to eCommerce
-	if (projects[0].classList.value != 'project') {
+	if (
+		projects[0].classList.value != 'project hide' &&
+		projects[0].classList.value != 'project'
+	) {
 		runSlides(ecommerceImages);
 	} else {
 		displayCover(ecommerceImages);
 	}
 	//if active project is equal to model trains
-	if (projects[1].classList.value != 'project') {
+	if (
+		projects[1].classList.value != 'project hide' &&
+		projects[1].classList.value != 'project'
+	) {
 		runSlides(trainsImages);
 	} else {
 		displayCover(trainsImages);
 	}
 	//if active project is equal to training project
-	if (projects[2].classList.value != 'project') {
+	if (
+		projects[2].classList.value != 'project hide' &&
+		projects[2].classList.value != 'project'
+	) {
 		runSlides(trainingImages);
 	} else {
 		displayCover(trainingImages);
@@ -116,23 +127,36 @@ function removeActivePortfolioClasses() {
 //Button functionality
 buttons.forEach((button, index) => {
 	button.addEventListener('click', () => {
-		idx = 0;
-		removeActivePortfolioClasses();
-		button.classList.add('active');
-		projects[index].classList.add('active');
-		projectManageHide();
-		imgSlideShow();
+		console.log(button.classList.value);
+
+		if (button.classList.value === 'btn active') {
+			console.log('project is active');
+		} else {
+			idx = 0;
+			removeActivePortfolioClasses();
+			button.classList.add('active');
+			projects[index].classList.add('active');
+			projectManageHide();
+			imgSlideShow();
+		}
 	});
 });
 
 //Project Functionality
 projects.forEach((project, index) => {
 	project.addEventListener('click', () => {
-		idx = 0;
-		removeActivePortfolioClasses();
-		project.classList.add('active');
-		buttons[index].classList.add('active');
-		projectManageHide();
-		imgSlideShow();
+		if (
+			project.classList.value != 'project hide' &&
+			project.classList.value != 'project'
+		) {
+			console.log('project already active');
+		} else {
+			idx = 0;
+			removeActivePortfolioClasses();
+			project.classList.add('active');
+			buttons[index].classList.add('active');
+			projectManageHide();
+			imgSlideShow();
+		}
 	});
 });
