@@ -13,13 +13,14 @@ const trainsImages = document.querySelectorAll('.trains');
 const trainingImages = document.querySelectorAll('.training');
 const userScreen = window.innerWidth;
 menuItems.style.maxHeight = '0px';
+console.log(userScreen);
 
 let idx = 0;
 const time = 2500;
 setInterval(imgSlideShow, time);
 
 function projectManageHide() {
-	if (userScreen <= 700) {
+	if (userScreen <= 950) {
 		projects.forEach((project) => {
 			if (
 				project.classList.value === 'project hide active' ||

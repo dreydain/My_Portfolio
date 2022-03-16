@@ -7,7 +7,6 @@
 body {
 	font-family: 'Kalam', cursive;
 	font-weight: bold;
-	font-size: medium;
 }
 
 html {
@@ -42,6 +41,13 @@ html {
 	padding: 0.5em;
 }
 
+.container-nav {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+}
+
 .menu {
 	flex: 1;
 	text-align: right;
@@ -54,10 +60,6 @@ html {
 	margin-top: 0;
 }
 
-.mobile {
-	margin: 0;
-}
-
 #navBar a {
 	color: inherit;
 	text-decoration: inherit;
@@ -68,10 +70,9 @@ html {
 }
 
 #navBar i {
+	margin-top: 0.5em;
 	color: white;
-	align-self: center;
 	display: none;
-	cursor: pointer;
 }
 
 /* Header Styling */
@@ -86,84 +87,84 @@ html {
 
 .header-background {
 	width: 50%;
-	max-height: 50%;
+	height: 23em;
 }
 
 .header-title-box {
 	background-image: linear-gradient(#3ab1c8, #2772db);
 	border-radius: 75%;
-	border: 8px solid #c8ff52;
-	top: 8%;
-	left: 27.5%;
-	width: 45%;
-	height: 85%;
+	border: 0.5em solid #c8ff52;
+	top: 12%;
+	left: 35%;
+	width: 30%;
+	height: 80%;
 	position: absolute;
 	z-index: 0;
 }
 
 #portrait {
 	border-radius: 75%;
-	top: 8%;
+	top: 5%;
 	left: 25%;
 	position: absolute;
-	border: 5px solid #c8ff52;
+	border: 0.25em solid #c8ff52;
 	max-width: 50%;
 }
 
 .header-title {
-	top: 65%;
+	top: 60%;
 	position: relative;
 }
 
 .divider {
-	top: 65%;
+	top: 60%;
 	position: relative;
 	text-align: center;
 }
 
 #down-arrow {
-	margin-top: 1.5em;
+	margin-top: 0.5em;
 }
 
 /* About Me Styling */
 
 #about-container {
-	padding-top: 5%;
+	padding: 1.8em;
 	background-image: linear-gradient(#3ab1c8, #2772db);
 }
 
 .about-content {
 	background-color: #f5ebeb;
 	border-radius: 2em;
-	border: 5px solid #c8ff52;
-	margin-bottom: 5%;
+	border: 0.5em solid #c8ff52;
+	margin-bottom: 3em;
 	width: 60%;
 	height: fit-content;
 }
 
 .about-content p {
-	margin: 2.5%;
+	margin: 1em;
 }
 
 .about-me {
 	display: flex;
 	justify-content: space-evenly;
-	margin-top: 0%;
+	margin-top: 0;
 }
 
 .about-img {
 	height: 40em;
 	border-radius: 2em;
-	border: 5px solid #c8ff52;
+	border: 0.5em solid #c8ff52;
 }
 
 .exp {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 .experience {
-	width: 40%;
+	width: 45%;
 }
 
 .experience ul {
@@ -178,7 +179,7 @@ html {
 /* Portfolio Styling */
 
 #portfolio-container {
-	padding: 5% 1% 3% 1%;
+	padding: 1.8em;
 	background-image: linear-gradient(#2772db, #122cec);
 }
 
@@ -190,10 +191,10 @@ html {
 .btn {
 	width: fit-content;
 	background-color: #3ab1c8;
-	border: 2px solid black;
+	border: 0.15em solid black;
 	border-radius: 0.75em;
-	margin: 2% 0%;
-	padding: 0.5%;
+	margin: 1em 0;
+	padding: 0.5em;
 	box-shadow: 0 0.15em;
 	text-align: center;
 	cursor: pointer;
@@ -217,19 +218,16 @@ html {
 .portfolio-cards {
 	display: flex;
 	justify-content: space-evenly;
-	padding-bottom: 3%;
+	padding-bottom: 1.8em;
 }
 
 .project {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 65vh;
+	height: 60vh;
 	margin: 0.25em;
-	border-radius: 2em;
+	border-radius: 2.75em;
 	background-color: #f5ebeb;
 	border: #3ab1c8 solid 0.25em;
 	flex: 0.5;
@@ -243,11 +241,11 @@ html {
 	color: #122cec;
 	text-decoration: inherit;
 	margin: 0 2em;
-	font-size: larger;
+	font-size: 1.5rem;
 }
 
 .project.active {
-	flex: 8;
+	flex: 5;
 	padding: 0.5em;
 	border: black solid 0.25em;
 }
@@ -266,7 +264,7 @@ html {
 .project img {
 	height: 100%;
 	width: 100%;
-	border-radius: 2em;
+	border-radius: 2.5em;
 }
 
 .project-info {
@@ -290,16 +288,12 @@ html {
 /* Connect Styling */
 
 #connect-container {
-	padding: 5% 2% 3% 3%;
+	padding: 1.8em;
 	background-image: linear-gradient(#122cec, #2772db);
 }
 
 .connect-info {
 	display: flex;
-}
-
-.connect-info h2 {
-	font-size: x-larger;
 }
 
 .black-shadow {
@@ -317,8 +311,8 @@ html {
 }
 
 .spacing {
-	margin-top: 1%;
-	margin-bottom: 4%;
+	margin-top: 0.5em;
+	margin-bottom: 2em;
 }
 
 .contact {
@@ -333,8 +327,8 @@ html {
 .social-links {
 	display: flex;
 	justify-content: center;
-	margin: 2% 0 1% 35%;
-	max-width: 20%;
+	margin: 0.5em 0 2em 38em;
+	max-width: 10em;
 	border-radius: 20em;
 	background-color: #f5ebeb;
 	position: relative;
@@ -342,7 +336,7 @@ html {
 
 .social-links img {
 	max-width: 90%;
-	margin: 6% 0 0 2%;
+	margin: 0.5em 0 0 0.2em;
 	position: relative;
 	border-radius: 100%;
 	transition: 0.5s ease;
@@ -356,24 +350,24 @@ html {
 
 /* RESPONSIVE MEDIA QUERIES */
 
-@media only screen and (max-width: 576px) {
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+
+@media screen and (max-width: 576px) {
+	/* Navigation */
 	#navBar {
-		color: white;
-		background: black;
-		height: 2em;
-		position: fixed;
-		top: 0;
-		max-width: 100%;
-		z-index: 1;
-		padding: 0.5em;
-		align-items: center;
-		justify-content: space-between;
+		width: 576px;
 	}
 
-	#menuBtn {
-		margin-right: 5%;
+	#navBar i {
+		display: block;
 	}
-
 	.menu {
 		width: 100%;
 		height: fit-content;
@@ -391,161 +385,156 @@ html {
 		margin: 0.5em 2em 0.5em 0;
 	}
 
-	#navBar i {
-		color: white;
-		display: block;
+	/* Header */
+
+	.header-background {
+		width: 50%;
+		height: 12em;
 	}
 
-	/* Header Styling */
-
 	.header-title-box {
-		background-image: linear-gradient(#3ab1c8, #2772db);
-		border-radius: 75%;
-		border: 0.25em solid #c8ff52;
-		top: 15%;
-		left: 27.5%;
+		font-size: 0.55rem;
+		border-radius: 6em;
+		top: 16%;
+		left: 30%;
 		width: 40%;
 		height: 80%;
 		position: absolute;
 		z-index: 0;
 	}
 
-	#portrait {
-		border-radius: 75%;
-		top: 8%;
-		left: 25%;
-		position: absolute;
-		border: 0.2em solid #c8ff52;
-		max-width: 50%;
-	}
-
-	.header-title {
-		top: 60%;
-		position: relative;
-		font-size: large;
-	}
-
-	.divider {
-		top: 60%;
-		font-size: medium;
-		position: relative;
-		text-align: center;
-	}
-
-	#down-arrow {
-		margin-top: 0.5em;
-	}
-
-	/* About Me */
+	/* About */
 	#about-container {
-		padding-top: 5%;
-		background-image: linear-gradient(#3ab1c8, #2772db);
-	}
-
-	.about-content {
-		background-color: #f5ebeb;
-		border-radius: 2em;
-		border: 5px solid #c8ff52;
-		margin-bottom: 5%;
-		width: 80%;
-		justify-self: center;
-	}
-
-	.about-content p {
-		margin: 2.5%;
+		padding: 0;
 	}
 
 	.about-me {
-		margin-top: 0%;
+		padding: 1em 0;
+		justify-content: center;
 	}
 
 	.about-img {
 		display: none;
 	}
 
+	.about-content {
+		width: 100%;
+		margin: 0 1em;
+		font-size: 1.5rem;
+	}
+
 	.exp {
 		flex-direction: column;
+		justify-content: center;
 	}
 
 	.experience {
-		width: 80%;
-		margin-left: 3.5em;
+		width: 92%;
+		margin-bottom: 1em;
 	}
 
-	.experience ul {
-		list-style-type: none;
-		margin: 5%;
+	/* Portfolio */
+
+	#portfolio-container {
+		padding: 0;
 	}
 
-	.experience ul li {
-		margin-bottom: 5%;
+	.portfolio-btns {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0.5em;
 	}
 
-	/* Portfolio Styling */
-
+	.btn p {
+		font-size: 1.5rem;
+	}
 	.project {
+		flex-direction: column;
 		height: fit-content;
-	}
-
-	.project a {
-		color: #122cec;
-		text-decoration: inherit;
-		margin: 0 2em;
-		font-size: larger;
-	}
-
-	.hide {
-		display: none;
+		font-size: 1.5rem;
 	}
 
 	.project.active {
-		flex: 12;
-		padding: 0.1em;
-		border: black solid 0.25em;
-		max-width: 90%;
-	}
-
-	.hide {
-		display: none;
-	}
-
-	.project.active img {
-		height: 55vh;
-		width: 45%;
-		margin: 0.05em;
-		border: black solid 0.25em;
+		margin: 0 1em;
+		padding: 0;
+		max-width: 100%;
 	}
 
 	.project-info {
-		text-align: center;
+		text-align: left;
+		width: 100%;
 	}
 
-	.project-info p {
-		margin-bottom: 1em;
-		font-size: medium;
-	}
-
-	.project-info h2 {
-		font-size: larger;
+	.project.active img {
+		height: 50vh;
+		width: 98%;
+		border: black solid 0.25em;
 	}
 
 	.project.active .project-info {
 		opacity: 100;
+		width: 95%;
 		position: relative;
-		margin: 0.25em;
+		margin: 0.75em;
+	}
+	.project a {
+		font-size: 2rem;
+		margin-left: 0.5em;
 	}
 
-	/* Social Links Responsive styling */
+	/* Connect */
 
-	.connect-info h1 {
-		font-size: x-large;
+	#connect-container {
+		padding: 1em;
 	}
-	.connect-info h2 {
-		font-size: larger;
+
+	.connect-info {
+		display: flex;
+	}
+
+	.spacing {
+		margin-top: 0;
+	}
+
+	.contact {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.contact h2 {
+		margin-bottom: 7.5em;
+		padding-bottom: 0;
+	}
+
+	.seeking {
+		text-align: right;
+		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 
 	.social-links {
-		max-width: 20%;
-		max-height: 3.5em;
+		display: flex;
+		justify-content: center;
+		margin-left: 12em;
+		max-width: 10em;
+		border-radius: 20em;
+		background-color: #f5ebeb;
+		position: relative;
+	}
+
+	.social-links img {
+		max-width: 90%;
+		margin: 0.5em 0 0 0.2em;
+		position: relative;
+		border-radius: 100%;
+		transition: 0.5s ease;
+	}
+
+	.social-links img:hover {
+		background-color: #28c2ff;
+		border-radius: 100%;
+		transition: 2s ease;
 	}
 }
