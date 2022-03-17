@@ -1047,3 +1047,162 @@ html {
 		margin: 0.5em 0.6em 0 0.2em;
 	}
 }
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+	/* Navigation 1400px */
+	#navBar {
+		max-width: 100vw;
+		font-size: 1.5rem;
+	}
+
+	/* Header 1200px */
+
+	.header-background {
+		width: 50%;
+		height: 30em;
+	}
+
+	.header-title-box {
+		top: 15%;
+		left: 25%;
+		width: 50%;
+		height: 81%;
+		position: absolute;
+		z-index: 0;
+	}
+
+	#portrait {
+		top: 3%;
+	}
+	.header-title {
+		position: relative;
+		font-size: 2.5rem;
+		top: 65%;
+	}
+
+	.divider {
+		position: relative;
+		text-align: center;
+		top: 65%;
+	}
+
+	#down-arrow {
+		margin-top: 0;
+	}
+
+	/* About 1400px */
+	#about-container {
+		padding: 0;
+		margin: 0;
+	}
+
+	.about-img {
+		display: none;
+	}
+
+	.about-content {
+		width: 100%;
+		margin: 1em;
+		font-size: 2.5rem;
+	}
+
+	.exp {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.experience {
+		width: 93%;
+		margin-bottom: 1em;
+	}
+
+	/* Portfolio 1200px */
+
+	#portfolio-container {
+		padding: 0;
+		font-size: 2.5rem;
+	}
+
+	.portfolio-btns {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0.5em;
+	}
+
+	.btn p {
+		font-size: 2.5rem;
+	}
+	.project {
+		flex-direction: column;
+		height: fit-content;
+		font-size: 2.5rem;
+	}
+
+	.project.active {
+		margin: 0 1em;
+		padding: 0;
+		max-width: 100%;
+	}
+
+	.project-info {
+		text-align: left;
+		width: 100%;
+	}
+
+	.project.active img {
+		height: 50vh;
+		width: 98%;
+		border: black solid 0.25em;
+	}
+
+	.project.active .project-info {
+		opacity: 100;
+		width: 95%;
+		position: relative;
+		margin: 0.75em;
+	}
+	.project a {
+		font-size: 2rem;
+		margin-left: 0.5em;
+	}
+	/* Connect 1200px */
+
+	#connect-container {
+		padding: 1em;
+		text-align: center;
+		font-size: 2.5rem;
+	}
+
+	.spacing {
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+
+	.connect-info {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-size: 2.5rem;
+	}
+
+	.contact {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.seeking {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.social-links {
+		margin-top: 5em;
+		margin-left: 30%;
+	}
+
+	.social-links img {
+		margin: 0.5em 0.6em 0 0.2em;
+	}
+}
