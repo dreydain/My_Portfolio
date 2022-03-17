@@ -20,7 +20,7 @@ const time = 2500;
 setInterval(imgSlideShow, time);
 
 function projectManageHide() {
-	if (userScreen <= 1000) {
+	if (userScreen <= 1500) {
 		projects.forEach((project) => {
 			if (
 				project.classList.value === 'project hide active' ||
