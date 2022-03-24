@@ -1,6 +1,6 @@
 'use strict';
 
-//NavBar Active Classes
+//NavBar Classes
 const btns = document.querySelectorAll('.navBtns');
 const menuItems = document.querySelector('.menu');
 const navBtns = document.querySelector('.menu ul');
@@ -8,6 +8,7 @@ const menuButton = document.getElementById('menuBtn');
 const projects = document.querySelectorAll('.project');
 const buttons = document.querySelectorAll('.btn');
 
+//Portfolio Classes
 const ecommerceImages = document.querySelectorAll('.ecommerce');
 const trainsImages = document.querySelectorAll('.trains');
 const trainingImages = document.querySelectorAll('.training');
