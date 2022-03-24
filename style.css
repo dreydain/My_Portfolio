@@ -110,19 +110,19 @@ a {
 #portrait {
 	border-radius: 75%;
 	top: 5%;
-	left: 25%;
+	left: 27%;
 	position: absolute;
 	border: 0.25em solid #c8ff52;
-	max-width: 50%;
+	max-width: 48%;
 }
 
 .header-title {
-	top: 60%;
+	top: 65%;
 	position: relative;
 }
 
 .divider {
-	top: 60%;
+	top: 65%;
 	position: relative;
 	text-align: center;
 }
@@ -254,7 +254,7 @@ a {
 }
 
 .project.active {
-	flex: 1.5;
+	flex: 1.75;
 	padding: 0.5em;
 	border: black solid 0.25em;
 }
