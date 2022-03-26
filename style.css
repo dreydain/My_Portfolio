@@ -92,7 +92,7 @@ a {
 
 .header-background {
 	width: 50%;
-	height: 23em;
+	height: 25em;
 }
 
 .header-title-box {
@@ -110,10 +110,10 @@ a {
 #portrait {
 	border-radius: 75%;
 	top: 5%;
-	left: 27%;
+	left: 28%;
 	position: absolute;
 	border: 0.25em solid #c8ff52;
-	width: 50%;
+	width: 45%;
 }
 
 .header-title {
