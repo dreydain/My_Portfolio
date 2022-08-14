@@ -1,0 +1,957 @@
+/*-- -------------------------- -->
+<---           NAVIGATION       -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+	nav {
+		display: flex;
+		justify-content: space-between;
+		background-color: rgba(0, 6, 13, 0.85);
+		color: #fff;
+		position: fixed;
+		width: 100vw;
+		max-width: 100%;
+		padding: 0.2em 0.25em;
+		z-index: 20;
+
+		#hamburger {
+			margin-left: 5.5em;
+		}
+		.nav-list {
+			list-style: none;
+			text-align: right;
+
+			opacity: 0;
+
+			li a {
+				color: #fff;
+				text-decoration: none;
+			}
+			.active {
+				color: #f27405;
+			}
+		}
+	}
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 40em) {
+	nav {
+		font-size: inherit;
+		padding: 0.25em 1em;
+	}
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+	nav {
+		font-size: inherit;
+		#hamburger {
+			display: none;
+		}
+		.nav-list {
+			display: block;
+			display: flex;
+			opacity: 1;
+
+			li {
+				margin-left: 1em;
+			}
+		}
+	}
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+	nav {
+		font-size: 23/20em;
+	}
+}
+
+/*-- -------------------------- -->
+<---           LANDING          -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+	#hero {
+		position: relative;
+		z-index: 1;
+		background: url('../images/header.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			height: 100%;
+			width: 100%;
+			background: #00060d;
+			opacity: 0.5;
+			top: 0;
+			left: 0;
+			z-index: -10;
+		}
+
+		.header {
+			padding: 1.5em 0;
+
+			h1,
+			h2 {
+				font-weight: 300;
+			}
+			h2 {
+				margin-bottom: 0;
+			}
+		}
+
+		.circle a:hover {
+			color: #f27405;
+			transition: 2s ease;
+		}
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 40em) {
+	#hero {
+		font-size: inherit;
+	}
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+	#hero {
+		font-size: 25/20em;
+		padding-top: 4em;
+
+		.wave-bottom {
+			bottom: -1em;
+		}
+	}
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+	#hero {
+		font-size: 28/20em;
+		padding: 2.5em 0;
+
+		.wave-bottom {
+			bottom: -2.75em;
+		}
+	}
+}
+/*-- -------------------------- -->
+<---           ABOUT            -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+	#about {
+		.qoute {
+			font-weight: 300;
+			margin: auto;
+			padding-top: 1.5em;
+			max-width: 50vw;
+		}
+
+		.container {
+			display: flex;
+			max-width: 90vw;
+			margin: 2em auto;
+		}
+
+		.text {
+			padding-left: 1.5em;
+			text-align: left;
+
+			#btn1 {
+				background: #f27405;
+				margin-right: 0.75em;
+			}
+		}
+
+		#portrait {
+			max-width: 32vw;
+			max-height: 33vh;
+			border-radius: 5%;
+			margin-top: 2em;
+		}
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 40em) {
+	#about {
+		font-size: inherit;
+		.qoute {
+			max-width: 60vw;
+		}
+		.container {
+			max-width: 85vw;
+		}
+
+		#portrait {
+			max-width: 40vw;
+			max-height: 41vh;
+		}
+	}
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+	#about {
+		font-size: 21/20em;
+
+		.qoute {
+			max-width: 50vw;
+			margin: auto;
+		}
+
+		.container {
+			margin: 3em auto;
+			max-width: 70vw;
+		}
+
+		#portrait {
+			max-height: 25vw;
+		}
+
+		.text {
+			padding-left: 3em;
+		}
+	}
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+	#about {
+		font-size: 24/20em;
+
+		.text {
+			max-width: 45vw;
+		}
+
+		#portrait {
+			max-height: 30vw;
+		}
+	}
+}
+/*-- -------------------------- -->
+<---           SKILLS         -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+	#skills {
+		position: relative;
+		z-index: 1;
+		background: url('../images/cutthroat.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			height: 100%;
+			width: 100%;
+			background: #00060d;
+			opacity: 0.8;
+			top: 0;
+			left: 0;
+			z-index: -10;
+		}
+		.container {
+			margin: 1em auto;
+			max-width: 90vw;
+
+			h4 {
+				padding: 0.5em 1em;
+				margin: 0.25em;
+				font-weight: 400;
+				color: #f27405;
+				background-color: rgba(201, 219, 242, 0.2);
+				border-radius: 8%;
+			}
+
+			h3 {
+				padding-bottom: 0.75em;
+
+				font-weight: 400;
+			}
+		}
+
+		i {
+			color: #000;
+		}
+
+		.circle {
+			background-color: #fff;
+			margin-bottom: 0.5em;
+		}
+
+		.wave-top {
+			top: -1.5em;
+		}
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 40em) {
+	#skills {
+		font-size: inherit;
+
+		.container {
+			max-width: 80vw;
+		}
+	}
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+	#skills {
+		font-size: 21/20em;
+		.container {
+			max-width: 70vw;
+			margin: 1em auto;
+		}
+
+		.wave-top {
+			top: -1.5em;
+		}
+	}
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+	#skills {
+		font-size: 24/20em;
+	}
+}
+/*-- -------------------------- -->
+<---           PORTFOLIO        -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+	#portfolio {
+		position: relative;
+		ul li {
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		li a {
+			color: #fff;
+		}
+
+		.container {
+			padding-bottom: 3em;
+			margin: 1em auto;
+			max-width: 80vw;
+		}
+
+		.project {
+			position: relative;
+			margin: 0.25em 0.25em;
+			cursor: pointer;
+
+			img {
+				max-width: 12.65em;
+				max-height: 13.25em;
+				border-radius: 5%;
+			}
+
+			p {
+				padding-bottom: 0.25em;
+			}
+		}
+
+		#one:hover div#o-one {
+			display: block;
+			opacity: 1;
+		}
+		#two:hover div#o-two {
+			display: block;
+			opacity: 1;
+		}
+		#three:hover div#o-three {
+			display: block;
+			opacity: 1;
+		}
+		#four:hover div#o-four {
+			display: block;
+			opacity: 1;
+		}
+		#five:hover div#o-five {
+			display: block;
+			opacity: 1;
+		}
+		#six:hover div#o-six {
+			display: block;
+			opacity: 1;
+		}
+
+		.overlay {
+			background-color: rgba(0, 6, 13, 0.7);
+			width: 12.65em;
+			height: 13.25em;
+			position: absolute;
+			top: 0em;
+			opacity: 0;
+			transition: opacity 0.5s;
+			border-radius: 5%;
+
+			h4 {
+				padding: 3.5em 0 0.25em;
+			}
+
+			button {
+				background-color: rgba(205, 213, 223, 0);
+				border-width: 0;
+				box-sizing: border-box;
+				color: #fff;
+				cursor: pointer;
+				outline: 0;
+				text-align: center;
+				font-size: inherit;
+			}
+		}
+
+		.active {
+			display: block;
+		}
+
+		.wave-bottom .shape-fill {
+			fill: #bf9b7a;
+		}
+
+		.modal {
+			display: none;
+			text-align: left;
+			font-size: 16/20em;
+			background-color: #323438;
+			padding: 0 1em 2em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+			z-index: 10;
+			border-radius: 5%;
+			max-width: 95vw;
+			min-width: 90vw;
+
+			.top {
+				position: relative;
+				display: flex;
+				justify-content: space-evenly;
+				margin-top: 2em;
+				margin-bottom: 1em;
+
+				a {
+					color: #f27405;
+					margin-right: 3em;
+				}
+			}
+
+			.close-modal {
+				font-size: 2.5em;
+				color: rgb(255, 255, 255);
+				cursor: pointer;
+				border: none;
+				background: none;
+				right: 0.5em;
+				position: absolute;
+			}
+
+			p {
+				padding: 0 4em 0.25em;
+			}
+
+			.access {
+				color: #f29422;
+			}
+
+			h4 {
+				padding: 1em 4em 0.25em;
+				color: #83a603;
+			}
+
+			h3 {
+				color: #83a603;
+			}
+		}
+		.show {
+			display: block;
+		}
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 40em) {
+	#portfolio {
+		font-size: inherit;
+
+		.modal {
+			min-width: 80vw;
+			font-size: inherit;
+		}
+	}
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+	#portfolio {
+		font-size: 21/20em;
+
+		.overlay {
+			width: 10.65em;
+			height: 11.25em;
+			padding: 5%;
+		}
+		.container {
+			max-width: 70vw;
+			margin: 2em auto;
+		}
+
+		.project {
+			img {
+				max-width: 10.65em;
+				max-height: 11.25em;
+			}
+		}
+	}
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+	#portfolio {
+		font-size: 24/20em;
+
+		.project {
+			img {
+				max-width: 12.65em;
+				max-height: 13.25em;
+			}
+		}
+
+		.overlay {
+			width: 12.65em;
+			height: 13.25em;
+			padding-top: 5%;
+		}
+	}
+}
+
+// /*-- -------------------------- -->
+// <---           TESTIMONIES      -->
+// <--- -------------------------- -*/
+
+//  /* Mobile */
+//  @media only screen and (min-width: 0em) {
+//  	#testimonials {
+//  		background-color: #bf9b7a;
+
+//  		h4,
+//  		h5 {
+//  			font-weight: 600;
+//  			color: #000;
+//  		}
+
+//  		.circle {
+//  			color: #000;
+//  			background-color: #fff;
+//  			margin-bottom: 0.5em;
+//  			box-shadow: 0.1em 0.4em 0.2em rgba(0, 6, 13, 0.5);
+//  			cursor: pointer;
+//  		}
+
+//  		#border {
+//  			border-color: #000;
+//  			border-style: solid;
+//  			border-width: 0.45em;
+//  			height: 3em;
+//  			width: 3em;
+//  			background-color: rgba(102, 106, 115, 0);
+//  			padding-top: 0.3em;
+//  			margin: 1.5em;
+
+//  			i {
+//  				font-size: 24/14em;
+//  			}
+//  		}
+//  		.qoute {
+//  			margin: 1em auto;
+//  			max-width: 85vw;
+//  		}
+
+//  		.wave-top {
+//  			top: 1em;
+//  		}
+
+//  		.testimonies {
+//  			height: fit-content;
+//  			width: 100vw;
+//  			overflow: hidden;
+//  			position: relative;
+//  			display: flex;
+//  			justify-content: center;
+
+//  			.review {
+//  				display: none;
+//  				width: 100vw;
+//  				transition: 0.4s ease;
+//  			}
+//  			.active {
+//  				display: block;
+//  			}
+//  		}
+//  	}
+//  }
+
+//  /* Tablet */
+//  @media only screen and (min-width: 40em) {
+//  	#testimonials {
+//  		font-size: inherit;
+
+//  		.qoute {
+//  			max-width: 75vw;
+//  		}
+//  	}
+//  }
+
+//  /* Small Desktop */
+//  @media only screen and (min-width: 64em) {
+//  	#testimonials {
+//  		font-size: inherit;
+//  	}
+//  }
+
+//  /* Large Desktop */
+//  @media only screen and (min-width: 1300px) {
+//  	#testimonials {
+//  		font-size: 24/20em;
+
+//  		.qoute {
+//  			max-width: 50vw;
+//  		}
+//  	}
+//  }
+//  /*-- -------------------------- -->
+//  <---           PRICING          -->
+//  <--- -------------------------- -*/
+
+//  /* Mobile */
+//  @media only screen and (min-width: 0em) {
+//  	#pricing {
+//  		margin-top: 1em;
+
+//  		h3 {
+//  			font-weight: 500;
+//  			color: #fff;
+//  		}
+
+//  		h4 {
+//  			font-weight: 200;
+//  			margin: 0.5em 0;
+//  		}
+
+//  		#price {
+//  			color: #83a603;
+//  			margin: 0.5em;
+//  		}
+//  		.circle {
+//  			display: none;
+//  		}
+
+//  		.container {
+//  			color: #666a73;
+
+//  			.card {
+//  				background-color: #fff;
+//  				border-style: solid;
+//  				border-color: #666a73;
+//  				border-width: 0.28em;
+//  				border-radius: 1em;
+//  				height: 20em;
+//  				width: 16em;
+//  				margin: 0.5em auto;
+
+//  				.head {
+//  					background-color: #666a73;
+//  					border-top-left-radius: 1em;
+//  					border-top-right-radius: 1em;
+//  					margin: -0.25em;
+//  				}
+
+//  				ul {
+//  					list-style: none;
+//  					text-align: left;
+//  					margin-left: 2.5em;
+//  				}
+
+//  				li {
+//  					margin-bottom: 1em;
+//  				}
+
+//  				li i {
+//  					color: #83a603;
+//  					margin-right: 0.75em;
+//  				}
+
+//  				.btn {
+//  					color: #fff;
+//  					background: #83a603;
+//  				}
+//  			}
+//  		}
+
+//  		.wave-bottom .shape-fill {
+//  			fill: #bf9b7a;
+//  		}
+//  	}
+//  }
+
+//  /* Tablet */
+//  @media only screen and (min-width: 40em) {
+//  	#pricing {
+//  		font-size: inherit;
+
+//  		.container {
+//  			display: flex;
+//  			flex-wrap: wrap;
+//  			justify-content: center;
+
+//  			.card {
+//  				margin: 1.5em;
+//  			}
+//  		}
+//  	}
+//  }
+
+//  /* Small Desktop */
+//  @media only screen and (min-width: 64em) {
+//  	#pricing {
+//  		font-size: inherit;
+
+//  		.container {
+//  			margin-left: 1.5em;
+//  		}
+//  	}
+//  }
+
+//  /* Large Desktop */
+//  @media only screen and (min-width: 1300px) {
+//  	#pricing {
+//  		font-size: 24/20em;
+//  	}
+//  }
+
+/*-- -------------------------- -->
+<---           CONTACT          -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+	#contact {
+		background-color: #bf9b7a;
+		color: #00060d;
+		text-align: left;
+		padding: 4em 0;
+		display: flex;
+		justify-content: space-between;
+
+		h2 {
+			color: #fff;
+		}
+
+		p {
+			color: #323438;
+		}
+
+		.text {
+			max-width: 30%;
+			margin: 1em 1.5em 1em 2em;
+		}
+
+		.form-container {
+			min-width: 50%;
+			margin-top: 3.5em;
+			margin-right: 2em;
+
+			#form {
+				display: flex;
+				flex-direction: column;
+
+				input {
+					border-radius: 0.5em;
+					border-style: none;
+					margin-bottom: 0.5em;
+					padding: 0.25em;
+				}
+				textarea {
+					min-height: 12vh;
+					border-radius: 0.5em;
+					padding: 0.25em;
+					border: none;
+					margin-bottom: 0.5em;
+				}
+				.btn {
+					background-color: #f27405;
+					font-size: 13/14em;
+					border-style: none;
+					margin-left: 40%;
+					max-width: 60%;
+					cursor: pointer;
+				}
+				::placeholder {
+					font-size: 10/14em;
+					font-family: 'Poppins', sans-serif;
+				}
+			}
+		}
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 40em) {
+	#contact {
+		font-size: inherit;
+
+		.form-container {
+			#form {
+				input {
+					padding: 0.5em;
+				}
+				textarea {
+					min-height: 15vh;
+
+					padding: 0.5em;
+				}
+
+				::placeholder {
+					font-size: 14/14em;
+				}
+				.btn {
+					max-width: 50%;
+					margin-left: 50%;
+				}
+			}
+		}
+	}
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+	#contact {
+		font-size: inherit;
+
+		.text {
+			margin-left: 4.5em;
+		}
+
+		.form-container {
+			margin-right: 4.5em;
+
+			#form {
+				textarea {
+					min-height: 18vh;
+				}
+
+				.btn {
+					max-width: 40%;
+					margin-left: 60%;
+				}
+			}
+		}
+	}
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+	#contact {
+		font-size: 24/20em;
+
+		.form-container {
+			max-width: 25vw;
+			#form {
+				max-width: 35vw;
+				.btn {
+					max-width: 40%;
+					margin-left: 60%;
+				}
+				::placeholder {
+					font-size: 18/14em;
+				}
+				input {
+					padding: 0.75em;
+				}
+			}
+		}
+	}
+}
+/*-- -------------------------- -->
+<---           FOOTER           -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+	#footer {
+		font-size: 13/20em;
+		background-color: #666a73;
+		text-align: center;
+		color: #fff;
+		padding-bottom: 1.5em;
+
+		.circle {
+			margin: 1em 0.2em;
+			background-color: #bf9b7a;
+		}
+
+		.circle:hover {
+			background-color: #83a603;
+			transition: 2s ease;
+		}
+
+		ul li {
+			display: inline-block;
+		}
+
+		.wave-top {
+			top: -1em;
+		}
+
+		.wave-top .shape-fill {
+			fill: #bf9b7a;
+		}
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 40em) {
+	#footer {
+		font-size: inherit;
+	}
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+	#footer {
+		font-size: inherit;
+	}
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+	#footer {
+		font-size: inherit;
+	}
+}

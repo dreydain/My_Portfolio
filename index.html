@@ -4,393 +4,997 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>April Hughes | Front-end Developer</title>
-		<meta name="description" content="Front-end and Full-Stack Developer. Currently working with JavaScript and React, what can I help you build today?" />
-		<link rel="stylesheet" href="style.css" />
+		<title>April Hughes | Front-end Developer | Seattle, WA</title>
+
+		<link rel="canonical" href="www.april-hughes.com" />
+		<meta
+			name="description"
+			content="Front-end and Full-Stack Developer. Currently developing with JavaScript and React, what can I help you build today?"
+		/>
+		<meta name="keywords" content="" />
+
+		<!--Social Media Display-->
+		<meta
+			property="og:title"
+			content="April Hughes | Front-end Developer | Seattle, WA"
+		/>
+		<meta
+			property="og:description"
+			content="Front-end and Full-Stack Developer. Currently developing with JavaScript and React, what can I help you build today?"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="images/header.jpg" />
+		<meta property="og:image" content="" />
+		<meta property="og:image:secure_url" content="" />
+
+		<!-- Style Sheets -->
+		<link rel="stylesheet" href="css/local.css" />
+		<link rel="stylesheet" href="css/root.css" />
+
+		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka&family=Fredoka+One&family=Kalam:wght@400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-08CEZR1YSM"></script>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-08CEZR1YSM"
+		></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
+			function gtag() {
+				dataLayer.push(arguments);
+			}
 			gtag('js', new Date());
 
 			gtag('config', 'G-08CEZR1YSM');
 		</script>
-
+		<!-- Font Awesome  -->
 		<script
 			src="https://kit.fontawesome.com/188e8690ae.js"
 			crossorigin="anonymous"
 		></script>
 	</head>
 	<body>
-		<div id="navBar">
-			<div class="container-nav">
-				<a class="myName" href="#parent">
-					<h4 id="myName" class="navBtns">April Hughes</h4>
-				</a>
+		<header>
+			<!-- ============================================ -->
+			<!--                   NAVIGATION                 -->
+			<!-- ============================================ -->
+
+			<nav>
+				<span>April Hughes</span>
 				<div class="menu">
-					<ul id="menuList">
-						<li>
-							<a href="#about-container">
-								<h4 id="about" class="navBtns">About</h4>
-							</a>
-						</li>
-						<li>
-							<a href="#portfolio-container"
-								><h4 id="portfolio" class="navBtns">Portfolio</h4></a
-							>
-						</li>
-						<li>
-							<a href="#connect-container"
-								><h4 id="connect" class="navBtns">Connect</h4></a
-							>
-						</li>
-						<li>
+					<i id="hamburger" class="fa-solid fa-bars"></i>
+					<ul class="nav-list">
+						<li class="nav-li">
 							<a
-								href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:d92eb831-7f91-4a6c-b53a-12814cb3a873"
+								aria-label="link to home"
+								class="link hero active"
+								href="index.html#hero"
+								>Home</a
 							>
-								<h4 class="navBtns">Resume</h4>
-							</a>
+						</li>
+						<li class="nav-li">
+							<a
+								aria-label="link to about"
+								class="link about"
+								href="index.html#about"
+								>About</a
+							>
+						</li>
+						<li class="nav-li">
+							<a
+								aria-label="link to skills"
+								class="link skills"
+								href="index.html#skills"
+								>Tech Skills</a
+							>
+						</li>
+						<li class="nav-li">
+							<a
+								aria-label="link to portfolio"
+								class="link portfolio"
+								href="index.html#portfolio"
+								>Portfolio</a
+							>
+						</li>
+						<!-- <li class="nav-li">
+							<a
+								aria-label="link to testimonials"
+								class="link testimonials"
+								href="index.html#testimonials"
+								>Testimonials</a
+							>
+						</li>
+						<li class="nav-li">
+							<a
+								aria-label="link to pricing"
+								class="link pricing"
+								href="index.html#pricing"
+								>Pricing</a
+							>
+						</li> -->
+						<li class="nav-li">
+							<a
+								aria-label="link to contact"
+								class="link contact"
+								href="index.html#contact"
+								>Contact</a
+							>
 						</li>
 					</ul>
 				</div>
-				<i id="menuBtn" class="fa-solid fa-bars"></i>
-			</div>
-		</div>
-		<header id="parent">
-			<div class="header-imgs">
-				<img class="header-background" src="images/code.jpg" alt="code" />
-				<img class="header-background" src="images/laptop.jpg" alt="laptop" />
-			</div>
-			<div class="header-imgs">
-				<img class="header-background" src="images/mug.jpg" alt="computer" />
-				<img class="header-background" src="images/code.jpg" alt="code" />
-			</div>
-			<div class="header-title-box">
-				<img id="portrait" src="images/portrait.jpg" alt="portrait" />
-				<h2 class="header-title titles green-shadow">April Hughes</h2>
-				<h2 class="divider">&#8765;&#60; &sol; &#62;&#8764;</h2>
-				<h2 class="header-title titles green-shadow">Software Developer</h2>
-				<h2 id="down-arrow" class="header-title titles green-shadow">
-					&#8744;
-				</h2>
-			</div>
+			</nav>
 		</header>
 
-		<div id="about-container">
-			<div class="about">
-				<div class="about-me">
-					<div class="about-content">
-						<h2 class="titles green-shadow">About Me</h2>
-						<p>
-							A little about me, I'm a single mom and currently homeschooling,
-							martial artist, rock climber, backpacker, and overall outdoor
-							adventurer. Throughout my work history I have attained leadership
-							roles and have acquired many skills including: creative problem
-							solving, communication, attention to detail, risk and stress
-							management, leadership and training, perseverance, strong work
-							ethic, and passion for learning. I love coding because it allows
-							me to exercise both my creativity and problem solving skills.
-						</p>
-						<p>
-							My coding education started with the Coding Dojo bootcamp and has
-							continued through online courses found on Youtube and Udemy;
-							along with building my own projects, independent research, and
-							problem-solving. My learning goal for 2022 is to master JavaScript
-							and React, my bonus goal is to master the MERN Stack. I have
-							chosen to learn the MERN Stack first because of the functionality
-							and versatility it offered for web apps, mobile apps, and
-							cloud-based apps.
-						</p>
-						<p>
-							I&#x27ve always wanted a career doing something that I loved. Over the
-							years what I love has changed, but overall I&#x27ve noticed an
-							underlying trend; a deep passion for helping others achieve their
-							goals. It was present in every professional discipline I pursued
-							such as animal training, health and fitness encouragement, as well
-							as providing advice to peers, and it showed up again when I found
-							myself helping the students I worked with.
-						</p>
-						<p>
-							It&#x27s also present in coding and the problems I can help others
-							solve. From building custom websites to online stores, engineering business management 
-							tools; even creating educational platforms to make learning more fun for kids and so much more. 
-							Helping others achieve their dreams and goals is very meaningful to me, with
-							coding I can build something to help not only today, but for many
-							years to come.
-						</p>
+		<main id="main">
+			<!-- ============================================ -->
+			<!--                    LANDING                   -->
+			<!-- ============================================ -->
+
+			<section id="hero">
+				<div class="header">
+					<h1>April Hughes</h1>
+					<h2>&#8765;&#60; &sol; &#62;&#8764;</h2>
+					<h2>Software Developer</h2>
+					<div class="circle">
+						<a href="https://github.com/dreydain">
+							<i
+								class="fa-brands fa-git"
+								aria-label="Click to view GitHub Profile"
+							></i>
+						</a>
 					</div>
-					<img
-						class="about-img"
-						src="images/outdoors.jpg"
-						alt="laptop and forest"
-					/>
-				</div>
-				<div class="exp">
-					<div class="experience about-content">
-						<h2 class="titles green-shadow">Education</h2>
-						<ul>
-							<li>
-								Coding Dojo: Web Fundamentals & Full Stack MERN <br />
-								4/2021 - 7/2021
-							</li>
-							<li>
-								Udemy: MERN eCommerce from scratch <br />
-								10/2021 - 11/2021
-							</li>
-							<li>
-								Scheduled for 2022: <br />
-								Udemy: The Complete JavaScript course 2022 <br />
-								Udemy: Node Express MongoDB & more The Complete bootcamp <br />
-							</li>
-						</ul>
-					</div>
-					<div class="experience about-content">
-						<h2 class="titles green-shadow">Tech Skills</h2>
-						<ul>
-							<li>Front End: JavaScript | ES6 | HTML5 | CSS3</li>
-							<li>Back End: Node.js | MongoDB | MySQL | PHP</li>
-							<li>Frameworks: React | Express | Redux | jQuery</li>
-							<li>Other Libraries: Bootstrap | Material UI</li>
-							<li>Version Control: Git | GitHub</li>
-							<li>Other Tools: Figma | Balsamiq</li>
-						</ul>
+					<div class="circle">
+						<a href="https://www.linkedin.com/in/april-hughes-web-dev/">
+							<i
+								class="fa-brands fa-linkedin-in"
+								aria-label="Click to view LinkedIn Profile"
+							></i>
+						</a>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div id="portfolio-container">
-			<h2 class="titles green-shadow">My Portfolio</h2>
-			<div class="portfolio-btns">
-				<div class="btn">
-					<p>Herbal eCommerce</p>
-				</div>
-				<div class="btn active">
-					<p>Model Trains</p>
-				</div>
-				<div class="btn">
-					<p>Training Project</p>
-				</div>
-				<div class="btn">
-					<p>My Portfolio</p>
-				</div>
-			</div>
-			<div class="portfolio-cards">
-				<div id="herbal-eCommerce" class="project">
-					<div class="project-info">
-						<h3 class="green-shadow">Herbal eCommerce</h3>
-						<p>
-							A Full Stack eCommerce site that manages products, users, and user
-							orders from within the admin accounts. Users can view their carts
-							and add or remove items in their carts and update their profiles.
-							This site is currently set up with PayPal.
-						</p>
-						<h3>My job on Herbal eCommerce</h3>
-						<p>
-							Full Stack Developer, I built this project from scratch while
-							following a tutorial. I customized the products and color scheme
-							of the project.
-						</p>
-						<h3>Technical Skills Used</h3>
-						<p>
-							MERN Stack (MongoDB, Express.js, React.js, Node.js), Redux,
-							Bootstrap, Mongoose, NPM, Git, and deployed to AWS EC2.
-						</p>
-						<a href="https://github.com/dreydain/eCommerce">Code</a>
-						<a href="http://18.236.93.230/">Site</a>
-					</div>
-					<img
-						src="images/HE_Cover.jpg"
-						alt="Herbal-ecommerce-project"
-						class="ecommerce"
-					/>
-					<img
-						src="images/HE_1.jpg"
-						alt="Herbal-eCommerce-project"
-						class="ecommerce hide"
+
+				<div class="wave-bottom">
+					<svg
+						data-name="Layer 1"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 1200 120"
+						preserveAspectRatio="none"
+						aria-hidden="true"
+						decoding="async"
 						loading="lazy"
-					/>
-					<img
-						src="images/HE_2.jpg"
-						alt="Herbal-eCommerce-project"
-						class="ecommerce hide"
-						loading="lazy"
-					/>
-					<img
-						src="images/HE_3.jpg"
-						alt="Herbal-eCommerce-project"
-						class="ecommerce hide"
-						loading="lazy"
-					/>
-				</div>
-				<div id="model-trains" class="project active">
-					<div class="project-info">
-						<h3 class="green-shadow">Model Trains</h3>
-						<p>
-							A business manager that manages products, product inventory,
-							orders, and workorders for manufacturing for multiple businesses.
-						</p>
-						<h3>My job on Model Trains</h3>
-						<p>
-							Full Stack Developer, designed wireframe, built back end and
-							RESTful API database. Designed Front End UI and UX, connected
-							front end and back end.
-						</p>
-						<h3>Technical Skills Used</h3>
-						<p>
-							MERN Stack (MongoDB, Express.js, React.js, Node.js), Redux,
-							Bootstrap, Mongoose, NPM, Balsamiq and Git.
-						</p>
-						<a href="https://github.com/dreydain/Model_Trains">Code</a>
-					</div>
-					<img
-						src="images/MT_Cover.jpg"
-						alt="model-trains-project"
-						class="trains"
-					/>
-					<img
-						src="images/MT_1.jpg"
-						alt="model-trains-project"
-						class="trains hide"
-						loading="lazy"
-					/>
-					<img
-						src="images/MT_2.jpg"
-						alt="model-trains-project"
-						class="trains hide"
-						loading="lazy"
-					/>
-					<img
-						src="images/MT_3.jpg"
-						alt="model-trains-project"
-						class="trains hide"
-						loading="lazy"
-					/>
-				</div>
-				<div id="training-project" class="project">
-					<div class="project-info">
-						<h3 class="green-shadow">Training Project</h3>
-						<p>
-							A training web app where coaches can create custom fitness plans
-							and workouts for their clients. Clients can select and view their
-							workouts on the calendar and mark them as completed. This web app
-							also displays a motivational qoute on each page load.
-						</p>
-						<h3>My job on Training Project</h3>
-						<p>
-							Full Stack Developer. This was a group project, we collaborated on
-							the wireframe, and devided the project between user and admin. I
-							built the user end.
-						</p>
-						<h3>Technical Skills Used</h3>
-						<p>
-							MERN Stack (MongoDB, Express.js, React.js, Node.js), Bootstrap,
-							Mongoose, NPM, Paletton, and Git.
-						</p>
-						<a href="https://github.com/JohnWilder406/TrainingProj">Code</a>
-					</div>
-					<img
-						src="images/TP_Cover.jpg"
-						alt="training-project-project"
-						class="training"
-					/>
-					<img
-						src="images/TP_1.jpg"
-						alt="training-project-project"
-						class="training hide"
-						loading="lazy"
-					/>
-					<img
-						src="images/TP_2.jpg"
-						alt="training-project-project"
-						class="training hide"
-						loading="lazy"
-					/>
-					<img
-						src="images/TP_3.jpg"
-						alt="training-project-project"
-						class="training hide"
-						loading="lazy"
-					/>
-				</div>
-				<div id="my-portfolio" class="project">
-					<div class="project-info">
-						<h3 class="green-shadow">My Portfolio</h3>
-						<p>
-							My lovely portfolio website, to impress you with my mad coding
-							skills... or lack thereof... depending on what postion you are
-							looking to fill? My goal is to highlight my prior work and
-							projects, both my hard and soft skills and my passion for coding.
-						</p>
-						<h3>My job on My Portfolio</h3>
-						<p>
-							Designer and Developer. I wanted to challenge myself by building
-							my portfolio with plain HTML, CSS, and vanilla JavaScript. Wireframe made with Figma
-							and deployed with Netlify.
-						</p>
-						<h3>Technical Skills Used</h3>
-						<p>HTML5, CSS3, JavaScript ES6, Figma, Git, and Netlify.</p>
-						<a href="https://github.com/dreydain/My_Portfolio">Code</a>
-					</div>
-					<img src="images/Portfolio_Cover.jpg" alt="me" />
-				</div>
-			</div>
-		</div>
-		<div id="connect-container">
-			<h2 class="spacing black-shadow">Connect with me:</h2>
-			<div class="connect-info">
-				<div class="contact">
-					<h2 class="green-shadow">Location:</h2>
-					<h3 class="black-shadow spacing">Seattle, WA.</h3>
-					<h2 class="green-shadow">Email:</h2>
-					<a href="mailto:ahughes0389@gmail.com"
-						><h3 class="black-shadow spacing">ahughes0389@gmail.com</h3></a
 					>
+						<path
+							d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+							class="shape-fill"
+						></path>
+					</svg>
 				</div>
-				<div class="seeking">
-					<h2 class="green-shadow">I&#x27m Seeking:</h2>
-					<h3 class="black-shadow spacing">
-						Junior or Entry Level Developer Roles <br />
-						Full Time or Part Time <br />
-						Contract, Permanent, W2 <br />
-						Front-end, Back-end or Full-Stack <br />
-						MERN Stack, JavaScript, React, Node
-					</h3>
-					<h2 class="green-shadow">I want to Learn:</h2>
-					<h3 class="black-shadow">
-						LESS/SCSS/SASS/SAAS <br />
-						Agile/Scrum, TypeScript <br />
-						Redux, AWS, Cloud, MySQL <br />
-						and React Native
-					</h3>
-				</div>
-			</div>
-			<div class="social-links">
-				<a href="https://www.linkedin.com/in/april-hughes-web-dev/">
+			</section>
+
+			<!-- ============================================ -->
+			<!--                   About                      -->
+			<!-- ============================================ -->
+
+			<section id="about">
+				<h3 class="qoute">
+					Don't fear failure so much that you refuse to try new things. The
+					saddest summary of a life contains three descriptions: could have,
+					might have, and should have. <br />
+					Louis E. Boone
+				</h3>
+				<div class="container">
 					<img
-						id="linkedIn-black"
-						class="linkedIn-logo"
-						src="images/black_linkedIn.png"
-						alt="LinkedIn Logo"
+						id="portrait"
+						src="images/portrait.jpg"
+						alt="portrait"
+						width="351"
+						height="458"
+						decoding="async"
+						loading="lazy"
+						aria-hidden="true"
 					/>
-				</a>
+					<div class="text">
+						<h2>A little about me</h2>
+						<p>
+							My name is April and I'm a Full-Stack Web Developer currently
+							specializing in Static Websites, React SPA's (Single Page
+							Applications), and Front-End Development. My favorite languages to
+							work with so far are HTML, CSS, and JavaScript along with React.
+						</p>
+						<p>
+							My transition into web development started with Coding Dojo
+							Bootcamp located in Bellevue, Washington, where I graduated as a
+							Full-Stack M.E.R.N. Developer. After graduation I utilized online
+							courses and personal projects to take a deep dive into JavaScript
+							and Front-End Development.
+						</p>
+						<p>
+							I've worn a wide array of hats over the years and each of them
+							downloaded valuable skills into my brain. In addition to my tech
+							skills I bring with me: Leadership, Management, Creative Problem
+							Solving, Communication, De-escalation, Customer Service, Attention
+							to Detail, Risk Mitigation, Teaching and Mentoring, Strong Work
+							Ethic, and a Passion for Learning.
+						</p>
+						<h2>What can I help you build today?</h2>
+						<a
+							aria-label="Click to contact and hire me"
+							href="index.html#contact"
+							id="btn1"
+							class="btn"
+						>
+							Hire Me!
+						</a>
+						<a
+							aria-label="check out my resume"
+							href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:d92eb831-7f91-4a6c-b53a-12814cb3a873"
+							class="btn"
+						>
+							Download CV
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ============================================ -->
+			<!--                  Skills                    -->
+			<!-- ============================================ -->
+
+			<section id="skills">
+				<div class="wave-top">
+					<svg
+						data-name="Layer 1"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 1200 120"
+						preserveAspectRatio="none"
+						aria-hidden="true"
+						decoding="async"
+						loading="lazy"
+					>
+						<path
+							d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+							class="shape-fill"
+						></path>
+					</svg>
+				</div>
+				<h2>Technical Skills</h2>
+				<div class="container flex-wrap">
+					<h4>HTML</h4>
+					<h4>CSS</h4>
+					<h4>JavaScript</h4>
+					<h4>PHP</h4>
+					<h4>React</h4>
+					<h4>Redux</h4>
+					<h4>jQuery</h4>
+					<h4>LESS CSS</h4>
+					<h4>Bootstrap</h4>
+					<h4>Material UI</h4>
+					<h4>Express</h4>
+					<h4>Node</h4>
+					<h4>MongoDB</h4>
+					<h4>MySQL</h4>
+					<h4>RESTful</h4>
+					<h4>CRUD</h4>
+					<h4>API Design</h4>
+					<h4>Object-Oriented Programming</h4>
+					<h4>Mobile-First Design</h4>
+					<h4>Figma</h4>
+					<h4>Balsamiq</h4>
+					<h4>Adobe Color</h4>
+					<h4>Git</h4>
+					<h4>GitHub</h4>
+					<h4>Windows</h4>
+					<h4>Netlify</h4>
+					<h4>Heroku</h4>
+					<h4>AWS EC2</h4>
+				</div>
+				<!-- <div class="container flex-wrap"> -->
+
+				<!--
+					<div class="card">
+						<div class="circle">
+							<i class="fa-solid fa-pen-to-square"></i>
+						</div>
+						<h4>Design</h4>
+						<p>
+							Step 1 and most important, is creating the perfect design for your
+							website.
+						</p>
+					</div>
+
+					<div class="card">
+						<div class="circle">
+							<i class="fa-solid fa-code"></i>
+						</div>
+						<h4>Development</h4>
+						<p>
+							Hand written code from start to finish, and tested for speed and
+							optmization.
+						</p>
+					</div>
+
+					<div class="card">
+						<div class="circle">
+							<i class="fa-solid fa-mobile-screen"></i>
+						</div>
+						<h4>Responsive</h4>
+						<p>
+							Mobile first design ensures that your website looks and performs
+							its best on all devices.
+						</p>
+					</div>
+
+					<div class="card">
+						<div class="circle">
+							<i class="fa-solid fa-circle-half-stroke"></i>
+						</div>
+						<h4>Dark Themes</h4>
+						<p>
+							Have light and dark themes built right into your website so your
+							users can interact day or night.
+						</p>
+					</div>
+					<div class="card">
+						<div class="circle">
+							<i class="fa-solid fa-life-ring"></i>
+						</div>
+						<h4>Support</h4>
+						<p>
+							24/7 Support, you will always be able to get in touch with our
+							lead developer.
+						</p>
+					</div>
+				</div> -->
+				<div class="wave-bottom">
+					<svg
+						data-name="Layer 1"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 1200 120"
+						preserveAspectRatio="none"
+						aria-hidden="true"
+						decoding="async"
+						loading="lazy"
+					>
+						<path
+							d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+							class="shape-fill"
+						></path>
+					</svg>
+				</div>
+			</section>
+
+			<!-- ============================================ -->
+			<!--                  Portfolio                   -->
+			<!-- ============================================ -->
+
+			<section id="portfolio">
+				<h2>My Latest Work</h2>
+				<ul>
+					<li id="all">All Works</li>
+					<li>|</li>
+					<li id="design">Web Design</li>
+					<li>|</li>
+					<li id="develop">Developement</li>
+					<li>|</li>
+					<li id="games">Games</li>
+					<li>|</li>
+					<li id="full-stack">Full Stack</li>
+				</ul>
+
+				<div class="container flex-wrap">
+					<div id="one" class="project develop full-stack">
+						<img
+							id="project-img"
+							src="images/HE_Cover.jpg"
+							alt="project"
+							width="350"
+							height="350"
+							decoding="async"
+							loading="lazy"
+						/>
+						<div id="o-one" class="overlay">
+							<h4>Herbal eCommerce</h4>
+							<p>Full Stack</p>
+						</div>
+					</div>
+					<div class="modal one-modal">
+						<button class="close-modal">&times;</button>
+						<div class="top">
+							<h3>Herbal eCommerce</h3>
+							<a
+								aria-label="View my code for Herbal eCommerce."
+								href="https://github.com/dreydain/eCommerce"
+								>Code</a
+							>
+							<a
+								aria-label="Check out Herbal eCommerce website."
+								href="http://18.236.93.230/"
+								>Website</a
+							>
+						</div>
+						<p>
+							Herbal eCommerce is a full-stack project that I built as part of a
+							Udemy Course I completed. This project manages products, users,
+							user orders, and carts. There are admin and user accounts,
+							payments are set up through the PayPal API. The store name,
+							products, and color themes are of my own design. In my spare time
+							I enjoy exploring and foraging for wild plants and herbs.
+						</p>
+						<br />
+						<p>
+							This project helped me practice and expand on the skills that I
+							developed at Coding Dojo. It also introduced me to Redux, and the
+							PayPal API. In learning Redux I identified connections and
+							developed a stronger understanding of React's useReducer Hook and
+							JavaScripts Switch Statement.
+						</p>
+
+						<h4>My job on this project:</h4>
+						<p>
+							Full-Stack Development and Deployment. This project was built from
+							scratch following the tutorial. I decided to deploy through AWS
+							EC2 instead of Heroku. This was the first project I've ever
+							deployed, and completing the steps of deployment gave me a better
+							overall understanding about how deployments work for full stack
+							web apps.
+						</p>
+						<h4>Technical Skills Used:</h4>
+						<p>
+							M.E.R.N (MongoDB, Express, React, Node), CSS, Redux, Bootstrap,
+							Mongoose, Git, PayPal API, and deployed through AWS EC2.
+						</p>
+						<h4>Guest Log In Creditientals:</h4>
+						<p>
+							If you would like to login to a user account you can sign in with
+							the creditientals below. If you would like to access the admin
+							side of this project please contact me.
+						</p>
+						<br />
+						<p class="access">Username: jane@example.com</p>
+						<p class="access">Password: 123456</p>
+					</div>
+					<div id="two" class="project develop games">
+						<img
+							id="project-img"
+							src="images/guess_my_number.jpg"
+							alt="project"
+							width="350"
+							height="350"
+							decoding="async"
+							loading="lazy"
+						/>
+						<div id="o-two" class="overlay">
+							<h4>Guess My Number</h4>
+							<p>Develop</p>
+							<p>Games</p>
+						</div>
+					</div>
+					<div class="modal two-modal">
+						<button class="close-modal">&times;</button>
+						<div class="top">
+							<h3>Guess My Number</h3>
+							<a
+								aria-label="View my code for Guess My Number."
+								href="https://github.com/dreydain/Guess_My_Number"
+								>Code</a
+							>
+							<a
+								aria-label="Check out Guess My Number Game."
+								href="https://games-guess-my-number.netlify.app/"
+								>Website</a
+							>
+						</div>
+						<p>
+							I built this project as part of a Masters JavaScript Course I'm
+							doing on Udemy. The instructor created all of the HTML and CSS
+							code, I followed along with the JavaScript content. In this
+							section of the course I practiced and solidified my understanding
+							of JavaScripts DOM Manipulation, and learned the different
+							variations of functions and how they operate.
+						</p>
+						<br />
+						<p>
+							Function Declarations: Called and captured the same way as
+							Function Expressions, but function declarations CAN be called
+							before they are defined in the code.
+						</p>
+						<p>
+							Function Expressions: Called and captured the same way as function
+							declarations, but function expressions CANNOT be called before
+							they are defined.
+						</p>
+						<p>
+							Arrow functions: Are similar to Function Expressions but are
+							easier to write, they CANNOT be called before they are defined and
+							DO NOT get their own 'this' keyword.
+						</p>
+
+						<h4>My job on this project:</h4>
+						<p>
+							Front-End Development and Deployment. This was my second project
+							that I've deployed through Netlify.
+						</p>
+						<h4>Technical Skills Used:</h4>
+						<p>JavaScript, Git, and Netlify.</p>
+					</div>
+					<div id="three" class="project design develop full-stack">
+						<img
+							id="project-img"
+							src="images/MT_Cover.jpg"
+							alt="project"
+							width="350"
+							height="350"
+							decoding="async"
+							loading="lazy"
+						/>
+						<div id="o-three" class="overlay">
+							<h4>Model Trains</h4>
+							<p>Design</p>
+							<p>Full Stack</p>
+						</div>
+					</div>
+					<div class="modal three-modal">
+						<button class="close-modal">&times;</button>
+						<div class="top">
+							<h3>Model Trains</h3>
+							<a
+								aria-label="Check out my code for Model Trains."
+								href="https://github.com/dreydain/Model_Trains"
+								>Code</a
+							>
+							<!-- <a aria-label="" href="">Website</a> -->
+						</div>
+						<p>
+							This is a full-stack project that I am currently working on for a
+							model train company. It is a process automation tool that will
+							manage products, manufacturing, and customer orders for multiple
+							sub businesses. I started this as my Solo Capstone Project for
+							Coding Dojo, and have continued to work on it post graduation.
+							Model Trains has been my biggest and most challenging project so
+							far and is teaching me a lot in regards to React, Redux, RESTful
+							and CRUD API database structures, UI/UX Design, and
+							developing/refining freelance SOP's.
+						</p>
+						<h4>My job on this project:</h4>
+						<p>
+							UI/UX Design, Full-Stack Development, Customer Service, and later
+							Deployment.
+						</p>
+						<h4>Technical Skills Used:</h4>
+						<p>
+							M.E.R.N (MongoDB, Express, React, Node), CSS, Redux, Bootstrap,
+							Mongoose, Git, Figma, and Balsamiq.
+						</p>
+					</div>
+					<div id="four" class="project design develop full-stack">
+						<img
+							id="project-img"
+							src="images/TP_Cover.jpg"
+							alt="project"
+							width="350"
+							height="350"
+							decoding="async"
+							loading="lazy"
+						/>
+						<div id="o-four" class="overlay">
+							<h4>Sport Coach</h4>
+							<p>Design</p>
+							<p>Full Stack</p>
+						</div>
+					</div>
+					<div class="modal four-modal">
+						<button class="close-modal">&times;</button>
+						<div class="top">
+							<h3>Sport Coach</h3>
+							<a
+								aria-label="Check out my code for Sport Coach."
+								href="https://github.com/JohnWilder406/TrainingProj"
+								>Code</a
+							>
+							<!-- <a aria-label="" href="">Website</a> -->
+						</div>
+						<p>
+							A full-stack Sports Web App to manage custom fitness plans and
+							workouts based on a specific sport/interest. There are two types
+							of users, Coaches/Admin and Clients. Coaches can create custom
+							fitness plans and workouts for their clients based on their
+							specific sports/interests. The client can then login and select
+							the fitness plan of their choice and it will populate onto the
+							calendar. Clients also have the option to mark the workout as
+							completed or missed. Above the calendar we connected to an API to
+							display motivational quotes on each page load.
+						</p>
+						<h4>My job on this project:</h4>
+						<p>
+							This was a Group Capstone Project for Coding Dojo, we collaborated
+							on the UI/UX design using balsamiq, and I built the Client/User
+							end of the application.
+						</p>
+						<h4>Technical Skills Used:</h4>
+						<p>
+							M.E.R.N (MongoDB, Express, React, Node), CSS, Bootstrap, Mongoose,
+							Quotes and Calendar API's, and Git.
+						</p>
+					</div>
+					<div id="five" class="project develop games">
+						<img
+							id="project-img"
+							src="images/pig.jpg"
+							alt="project"
+							width="350"
+							height="350"
+							decoding="async"
+							loading="lazy"
+						/>
+						<div id="o-five" class="overlay">
+							<h4>Pig</h4>
+							<p>Develop</p>
+							<p>Games</p>
+						</div>
+					</div>
+					<div class="modal five-modal">
+						<button class="close-modal">&times;</button>
+						<div class="top">
+							<h3>Pig</h3>
+							<a
+								aria-label="View my code for Pig."
+								href="https://github.com/dreydain/Pig_Game"
+								>Code</a
+							>
+							<a
+								aria-label="Check out Pig Game."
+								href="https://games-pig.netlify.app/"
+								>Website</a
+							>
+						</div>
+						<p>
+							This is another game I built as part of the Master JavaScript
+							course I am doing on Udemy. The instructor created all of the HTML
+							and CSS code, I followed along with the JavaScript content. In
+							this project I practiced more DOM manipulation, utilized pseudo
+							code to create steps to implement game logic, and practiced
+							if/else statements, math functions, event listeners, and more
+							function expressions.
+						</p>
+						<h4>My job on this project:</h4>
+						<p>Front-End Development and Deployment.</p>
+						<h4>Technical Skills Used:</h4>
+						<p>JavaScript, Git, and Netlify.</p>
+					</div>
+					<div id="six" class="project design develop">
+						<img
+							id="project-img"
+							src="images/laptop.jpg"
+							alt="project"
+							width="350"
+							height="350"
+							decoding="async"
+							loading="lazy"
+						/>
+						<div id="o-six" class="overlay">
+							<h4>My Portfolio</h4>
+							<p>Design</p>
+							<p>Develop</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal six-modal">
+					<button class="close-modal">&times;</button>
+					<div class="top">
+						<h3>Title</h3>
+						<a aria-label="Check out my portfolio code." href="">Code</a>
+					</div>
+					<p>
+						This is the second version of my portfolio website. After learning
+						more about web design and mobile first development I knew that I
+						could design and build a better portfolio. So I hopped on figma,
+						created my design, extracted a color theme with adobe color, and
+						then built my new portfolio as mobile first. I also began using LESS
+						with Koala as my compiler for CSS.
+					</p>
+					<h4>My job on this project:</h4>
+					<p>
+						UI/UX Design, Front-End Development, Deployment, Testing and Speed
+						Optimizations.
+					</p>
+					<h4>Technical Skills Used:</h4>
+					<p>
+						HTML, CSS, JavaScript, CSS/LESS, Koala, Figma, Adobe Color, Git, and
+						Netlify.
+					</p>
+				</div>
+				<div class="wave-bottom">
+					<svg
+						data-name="Layer 1"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 1200 120"
+						preserveAspectRatio="none"
+						aria-hidden="true"
+						decoding="async"
+						loading="lazy"
+					>
+						<path
+							d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+							class="shape-fill"
+						></path>
+					</svg>
+				</div>
+			</section>
+
+			<!-- ============================================ -->
+			<!--                  Testimonials                -->
+			<!-- ============================================ -->
+
+			<!-- <section id="testimonials">
+				<div class="circle" id="border">
+					<i class="fa-solid fa-quote-right"></i>
+				</div>
+				<div class="testimonies">
+					<div class="review active">
+						<p class="qoute">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed
+							neque ut velit tristique hendrerit in ac risus. Aenean aliquet
+							maximus ipsum sed tempus. Sed dapibus libero a nisi tincidunt
+							pharetra. Quisque aliquet mattis eros. Etiam laoreet.
+						</p>
+						<h4>Customer Name 0</h4>
+						<h5>Business Name</h5>
+					</div>
+					<div class="review">
+						<p class="qoute">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed
+							neque ut velit tristique hendrerit in ac risus. Aenean aliquet
+							maximus ipsum sed tempus. Sed dapibus libero a nisi tincidunt
+							pharetra. Quisque aliquet mattis eros. Etiam laoreet.
+						</p>
+						<h4>Customer Name 1</h4>
+						<h5>Business Name</h5>
+					</div>
+					<div class="review">
+						<p class="qoute">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed
+							neque ut velit tristique hendrerit in ac risus. Aenean aliquet
+							maximus ipsum sed tempus. Sed dapibus libero a nisi tincidunt
+							pharetra. Quisque aliquet mattis eros. Etiam laoreet.
+						</p>
+						<h4>Customer Name 2</h4>
+						<h5>Business Name</h5>
+					</div>
+				</div>
+
+				<div class="circle arrow-left">
+					<i class="fa-solid fa-angle-left"></i>
+				</div>
+				<div class="circle arrow-right">
+					<i class="fa-solid fa-angle-right"></i>
+				</div>
+				<div class="wave-bottom">
+					<svg
+						data-name="Layer 1"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 1200 120"
+						preserveAspectRatio="none"
+						aria-hidden="true"
+						decoding="async"
+						loading="lazy"
+					>
+						<path
+							d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+							class="shape-fill"
+						></path>
+					</svg>
+				</div>
+			</section> -->
+
+			<!-- ============================================ -->
+			<!--                  Pricing                     -->
+			<!-- ============================================ -->
+
+			<!-- <section id="pricing">
+				<h2>Pricing</h2>
+
+				<div class="container">
+					<div class="card price" id="blog">
+						<div class="head">
+							<h3>Standard & Blog</h3>
+						</div>
+						<h4>Starting At</h4>
+						<h3 id="price"><i class="fa-solid fa-dollar-sign"></i>350/mo</h3>
+						<ul>
+							<li><i class="fa-solid fa-circle-check"></i> 1 Post Per Month</li>
+							<li><i class="fa-solid fa-circle-check"></i> Custom Content</li>
+							<li><i class="fa-solid fa-circle-check"></i> 1000 Word Post</li>
+							<li>
+								<i class="fa-solid fa-circle-check"></i> $125 Extra Per Post
+							</li>
+						</ul>
+						<a
+							aria-label="click to navigate to contact section"
+							href="index.html#contact"
+							class="btn"
+						>
+							Contact Us
+						</a>
+					</div>
+					<div class="card price" id="standard">
+						<div class="head">
+							<h3>Standard</h3>
+						</div>
+						<h4>5 Pages</h4>
+						<h3 id="price"><i class="fa-solid fa-dollar-sign"></i>150/mo</h3>
+						<ul>
+							<li><i class="fa-solid fa-circle-check"></i> Unlimited Edits</li>
+							<li><i class="fa-solid fa-circle-check"></i> Includes Hosting</li>
+							<li><i class="fa-solid fa-circle-check"></i> 24/7 Service</li>
+							<li><i class="fa-solid fa-circle-check"></i> Lifetime Updates</li>
+						</ul>
+						<a
+							aria-label="click to navigate to contact section"
+							href="index.html#contact"
+							class="btn"
+						>
+							Contact Us
+						</a>
+					</div>
+					<div class="card price" id="full-stack">
+						<div class="head">
+							<h3>Full Stack</h3>
+						</div>
+						<h4>Starting At</h4>
+						<h3 id="price"><i class="fa-solid fa-dollar-sign"></i>2000</h3>
+						<ul>
+							<li><i class="fa-solid fa-circle-check"></i> Unlimited Edits</li>
+							<li><i class="fa-solid fa-circle-check"></i> Data Management</li>
+							<li><i class="fa-solid fa-circle-check"></i> Custom API's</li>
+							<li><i class="fa-solid fa-circle-check"></i> Lifetime Updates</li>
+						</ul>
+						<a
+							aria-label="click to navigate to contact section"
+							href="index.html#contact"
+							class="btn"
+						>
+							Contact Us
+						</a>
+					</div>
+				</div>
+
+				<div class="circle">
+					<i class="fa-solid fa-angle-left"></i>
+				</div>
+				<div class="circle">
+					<i class="fa-solid fa-angle-right"></i>
+				</div>
+				<div class="wave-bottom">
+					<svg
+						data-name="Layer 1"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 1200 120"
+						preserveAspectRatio="none"
+						aria-hidden="true"
+						decoding="async"
+						loading="lazy"
+					>
+						<path
+							d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+							class="shape-fill"
+						></path>
+					</svg>
+				</div>
+			</section> -->
+
+			<!-- ============================================ -->
+			<!--                  Contact                     -->
+			<!-- ============================================ -->
+
+			<section id="contact">
+				<div class="text">
+					<h2>Contact Me</h2>
+					<h4>EMAIL:</h4>
+					<p>ahughes0389@gmail.com</p>
+					<h4>LOCATION:</h4>
+					<p>Greater Seattle, WA</p>
+				</div>
+				<div class="form-container">
+					<form id="form" name="Contact Form" method="POST" data-netlify="true">
+						<!-- <label for="name">Name</label> -->
+						<input
+							id="name"
+							aria-label="name"
+							class="input1"
+							name="name"
+							placeholder="Name"
+							type="text"
+							tabindex="1"
+							required
+						/>
+						<!-- <label for="email">Email</label> -->
+						<input
+							id="email"
+							aria-label="email"
+							class="input2"
+							name="email"
+							placeholder="Email"
+							type="email"
+							tabindex="2"
+							required
+						/>
+
+						<!-- <label for="message">Message</label> -->
+						<textarea
+							id="message"
+							aria-label="write your message"
+							name="message"
+							placeholder="Message"
+							tabindex="4"
+							required
+						></textarea>
+						<div data-netlify-recaptcha="true"></div>
+
+						<button
+							name="submit"
+							type="submit"
+							id="contact-submit"
+							class="btn"
+							data-submit="...Sending"
+						>
+							Send Message
+						</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<!-- ============================================ -->
+		<!--                     FOOTER                   -->
+		<!-- ============================================ -->
+
+		<footer id="footer">
+			<div class="wave-top">
+				<svg
+					data-name="Layer 1"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1200 120"
+					preserveAspectRatio="none"
+					aria-hidden="true"
+					decoding="async"
+					loading="lazy"
+				>
+					<path
+						d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+						class="shape-fill"
+					></path>
+				</svg>
+			</div>
+			<div class="circle">
 				<a href="https://github.com/dreydain">
-					<img
-						id="github-black"
-						class="github-logo"
-						src="images/black_github.png"
-						alt="GitHub Logo"
-					/>
+					<i
+						class="fa-brands fa-git"
+						aria-label="Click to view GitHub Profile"
+					></i>
 				</a>
 			</div>
-		</div>
+			<div class="circle">
+				<a href="https://www.linkedin.com/in/april-hughes-web-dev/">
+					<i
+						class="fa-brands fa-linkedin-in"
+						aria-label="Click to view LinkedIn Profile"
+					></i>
+				</a>
+			</div>
+			<ul>
+				<li>Copyright © 2022</li>
+				<li>|</li>
+				<li>April Hughes</li>
+				<li>|</li>
+				<li>All Rights Reserved</li>
+			</ul>
+		</footer>
 	</body>
 	<script src="script.js"></script>
 </html>

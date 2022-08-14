@@ -1,164 +1,164 @@
 'use strict';
+// Navigation
+const sections = document.querySelectorAll('section');
+const navBtns = document.querySelectorAll('.link');
+const mobileNav = document.querySelector('.nav-list');
+const hamburger = document.getElementById('hamburger');
+mobileNav.style.maxHeight = '0px';
 
-//NavBar Classes
-const btns = document.querySelectorAll('.navBtns');
-const menuItems = document.querySelector('.menu');
-const navBtns = document.querySelector('.menu ul');
-const menuButton = document.getElementById('menuBtn');
+//Portfolio
+const all = document.getElementById('all');
+const design = document.getElementById('design');
+const develop = document.getElementById('develop');
+const games = document.getElementById('games');
+const full_stack = document.getElementById('full-stack');
 const projects = document.querySelectorAll('.project');
-const buttons = document.querySelectorAll('.btn');
+const modals = document.querySelectorAll('.modal');
+const closeBtns = document.querySelectorAll('.close-modal');
+const overlays = document.querySelectorAll('.overlay');
+const body = document.body;
 
-//Portfolio Classes
-const ecommerceImages = document.querySelectorAll('.ecommerce');
-const trainsImages = document.querySelectorAll('.trains');
-const trainingImages = document.querySelectorAll('.training');
-const userScreen = window.innerWidth;
-menuItems.style.maxHeight = '0px';
-console.log(userScreen);
+//Testimonies
+const reviews = document.querySelectorAll('.review');
+const left_arrow = document.querySelector('.arrow-left');
+const right_arrow = document.querySelector('.arrow-right');
 
+// ----- Navigation ----- //
+window.addEventListener('scroll', () => {
+	let current = '';
+
+	sections.forEach((section) => {
+		const sectionTop = section.offsetTop;
+		const sectionHeight = section.clientHeight;
+
+		if (pageYOffset >= sectionTop - sectionHeight / 3) {
+			current = section.getAttribute('id');
+		}
+	});
+
+	navBtns.forEach((btn) => {
+		btn.classList.remove('active');
+		if (btn.classList.contains(current)) {
+			btn.classList.add('active');
+		}
+	});
+});
+
+// Mobile Navigation Display
+hamburger.addEventListener('click', () => {
+	if (mobileNav.style.maxHeight === '0px') {
+		mobileNav.style.maxHeight = 'fit-content';
+		mobileNav.style.opacity = '1';
+		mobileNav.style.padding = '0.5em 0';
+	} else {
+		mobileNav.style.maxHeight = '0px';
+		mobileNav.style.opacity = '0';
+		mobileNav.style.padding = '0';
+	}
+});
+
+// ----- Portfolio Project Sort Functions ----- //
+
+// Array of all Projects
+const projectsArr = [...projects.entries()];
+let projectList = [];
+projectsArr.forEach((project) => {
+	projectList.push([...project]);
+});
+
+// Function to Sort and display projects dynamically
+function sort(projectType) {
+	projectList.forEach((project) => {
+		project[1].classList.contains(projectType)
+			? (project[1].style.display = 'block')
+			: (project[1].style.display = 'none');
+	});
+}
+
+// OnClick Events calling Sort function
+all.addEventListener('click', () => {
+	projectList.forEach((project) => {
+		project[1].style.display = 'block';
+	});
+});
+
+design.addEventListener('click', () => {
+	sort('design');
+});
+
+develop.addEventListener('click', () => {
+	sort('develop');
+});
+
+games.addEventListener('click', () => {
+	sort('games');
+});
+
+full_stack.addEventListener('click', () => {
+	sort('full-stack');
+});
+
+// --- MODAL DISPLAY FUNCTIONS --- //
+
+// Close Modal
+const closeModal = function () {
+	modals.forEach((modal) => {
+		modal.classList.remove('show');
+	});
+};
+closeBtns.forEach((btn) => {
+	btn.addEventListener('click', closeModal);
+});
+
+// Open Modal
+overlays.forEach(function (overlay, i) {
+	overlay.addEventListener('click', () => {
+		closeModal();
+		modals[i].classList.add('show');
+	});
+});
+
+/*
+
+// ----- Testimonies Display & Navigation ----- //
+
+// --- Testimony Slide Show --- //
 let idx = 0;
-const time = 2500;
-setInterval(imgSlideShow, time);
-
-function projectManageHide() {
-	if (userScreen <= 1000) {
-		projects.forEach((project) => {
-			if (
-				project.classList.value === 'project hide active' ||
-				project.classList.value === 'project active'
-			) {
-				project.classList.remove('hide');
-			} else {
-				project.classList.add('hide');
-			}
-		});
+const slideShow = setInterval(function () {
+	if (idx === reviews.length - 1) {
+		reviews[idx].classList.remove('active');
+		reviews[0].classList.add('active');
+		idx = 0;
+	} else {
+		reviews[idx].classList.remove('active');
+		reviews[idx + 1].classList.add('active');
+		idx++;
 	}
-}
+}, 3000);
 
-projectManageHide();
-
-btns.forEach((btn) => {
-	btn.addEventListener('click', () => {
-		removeActiveClasses();
-		btn.classList.add('active');
+// --- Testimony Click Functions --- //
+// --- make more dry later --- //
+function prev() {
+	clearInterval(slideShow);
+	idx--;
+	idx < 0 ? (idx = reviews.length - 1) : ' ';
+	reviews.forEach((review) => {
+		review.classList.remove('active');
 	});
-});
-
-function removeActiveClasses() {
-	btns.forEach((btn) => {
-		btn.classList.remove('active');
-	});
+	reviews[idx].classList.add('active');
 }
 
-menuButton.addEventListener('click', () => {
-	if (menuItems.style.maxHeight === '0px') {
-		menuItems.style.maxHeight = 'fit-content';
-	} else {
-		menuItems.style.maxHeight = '0px';
-	}
-});
-
-//Portfolio Projects Functionality
-
-function runSlides(imagesArr) {
-	if (imagesArr.length > 0) {
-		if (idx === imagesArr.length - 1) {
-			imagesArr[idx].classList.add('hide');
-			imagesArr[0].classList.remove('hide');
-
-			idx = 0;
-		}
-	}
-
-	imagesArr[idx].classList.add('hide');
-	imagesArr[idx + 1].classList.remove('hide');
-}
-
-function displayCover(images) {
-	images.forEach((image) => {
-		image.classList.add('hide');
-	});
-	images[0].classList.remove('hide');
-	clearInterval(imgSlideShow);
-}
-
-// Image Slide Show interval function
-function imgSlideShow() {
-	//if active project is equal to eCommerce
-	if (
-		projects[0].classList.value != 'project hide' &&
-		projects[0].classList.value != 'project'
-	) {
-		runSlides(ecommerceImages);
-	} else {
-		displayCover(ecommerceImages);
-	}
-	//if active project is equal to model trains
-	if (
-		projects[1].classList.value != 'project hide' &&
-		projects[1].classList.value != 'project'
-	) {
-		runSlides(trainsImages);
-	} else {
-		displayCover(trainsImages);
-	}
-	//if active project is equal to training project
-	if (
-		projects[2].classList.value != 'project hide' &&
-		projects[2].classList.value != 'project'
-	) {
-		runSlides(trainingImages);
-	} else {
-		displayCover(trainingImages);
-	}
-
+function next() {
+	clearInterval(slideShow);
 	idx++;
+	idx > reviews.length - 1 ? (idx = 0) : ' ';
+	reviews.forEach((review) => {
+		review.classList.remove('active');
+	});
+	reviews[idx].classList.add('active');
 }
 
-//Function for removing active project and button classes
-function removeActivePortfolioClasses() {
-	projects.forEach((project) => {
-		project.classList.remove('active');
-	});
+left_arrow.addEventListener('click', prev);
+right_arrow.addEventListener('click', next);
 
-	buttons.forEach((btn) => {
-		btn.classList.remove('active');
-	});
-}
-
-//Button functionality
-buttons.forEach((button, index) => {
-	button.addEventListener('click', () => {
-		console.log(button.classList.value);
-
-		if (button.classList.value === 'btn active') {
-			console.log('project is active');
-		} else {
-			idx = 0;
-			removeActivePortfolioClasses();
-			button.classList.add('active');
-			projects[index].classList.add('active');
-			projectManageHide();
-			imgSlideShow();
-		}
-	});
-});
-
-//Project Functionality
-projects.forEach((project, index) => {
-	project.addEventListener('click', () => {
-		if (
-			project.classList.value != 'project hide' &&
-			project.classList.value != 'project'
-		) {
-			console.log('project already active');
-		} else {
-			idx = 0;
-			removeActivePortfolioClasses();
-			project.classList.add('active');
-			buttons[index].classList.add('active');
-			projectManageHide();
-			imgSlideShow();
-		}
-	});
-});
+*/
