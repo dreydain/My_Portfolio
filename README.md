@@ -10,10 +10,7 @@ My Portfolio Website to help get people acquinted with me show off some of my pr
 
 <h2>Build status</h2>
 <ul>
-  <li>Completed</li>
-  <li>Plan to add more projects in the future</li>
-  <li>Will add a review section in the near future.</li>
-  <li>After completing my Advanced JavaScript course, I will come back and revise/improve my code</li>
+  <li>Re-designed and currently building new version</li>
 </ul>
 
 <h2>Tech/framework used</h2>
