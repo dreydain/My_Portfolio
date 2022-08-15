@@ -192,7 +192,24 @@
 					Louis E. Boone
 				</h3>
 				<div class="container">
-					<img
+					<picture>
+						<source
+							media="(max-width: 640px)"
+							srcset="images/portrait-m.webp"
+						/>
+						<source media="(min-width: 641px)" srcset="images/portrait.webp" />
+						<img
+							id="portrait"
+							src="images/portrait.jpg"
+							alt="portrait"
+							width="351"
+							height="458"
+							decoding="async"
+							loading="lazy"
+							aria-hidden="true"
+						/>
+					</picture>
+					<!-- <img
 						id="portrait"
 						src="images/portrait.jpg"
 						alt="portrait"
@@ -201,7 +218,7 @@
 						decoding="async"
 						loading="lazy"
 						aria-hidden="true"
-					/>
+					/> -->
 					<div class="text">
 						<h2>A little about me</h2>
 						<p>
@@ -392,6 +409,16 @@
 
 				<div class="container flex-wrap">
 					<div id="one" class="project develop full-stack">
+						<picture>
+							<source
+								media="(max-width: 640px)"
+								srcset="images/HE_Cover-m.webp"
+							/>
+							<source
+								media="(min-width: 641px)"
+								srcset="images/HE_Cover.webp"
+							/>
+						</picture>
 						<img
 							id="project-img"
 							src="images/HE_Cover.jpg"
@@ -463,6 +490,16 @@
 						<p class="access">Password: 123456</p>
 					</div>
 					<div id="two" class="project develop games">
+						<picture>
+							<source
+								media="(max-width: 640px)"
+								srcset="images/guess_my_number-m.webp"
+							/>
+							<source
+								media="(min-width: 641px)"
+								srcset="images/guess_my_number.webp"
+							/>
+						</picture>
 						<img
 							id="project-img"
 							src="images/guess_my_number.jpg"
@@ -527,15 +564,26 @@
 						<p>JavaScript, Git, and Netlify.</p>
 					</div>
 					<div id="three" class="project design develop full-stack">
-						<img
-							id="project-img"
-							src="images/MT_Cover.jpg"
-							alt="project"
-							width="350"
-							height="350"
-							decoding="async"
-							loading="lazy"
-						/>
+						<picture>
+							<source
+								media="(max-width: 640px)"
+								srcset="images/MT_Cover-m.webp"
+							/>
+							<source
+								media="(min-width: 641px)"
+								srcset="images/MT_Cover.webp"
+							/>
+							<img
+								id="project-img"
+								src="images/MT_Cover.jpg"
+								alt="project"
+								width="350"
+								height="350"
+								decoding="async"
+								loading="lazy"
+							/>
+						</picture>
+
 						<div id="o-three" class="overlay">
 							<h4>Model Trains</h4>
 							<p>Design</p>
@@ -576,15 +624,26 @@
 						</p>
 					</div>
 					<div id="four" class="project design develop full-stack">
-						<img
-							id="project-img"
-							src="images/TP_Cover.jpg"
-							alt="project"
-							width="350"
-							height="350"
-							decoding="async"
-							loading="lazy"
-						/>
+						<picture>
+							<source
+								media="(max-width: 640px)"
+								srcset="images/TP_Cover-m.webp"
+							/>
+							<source
+								media="(min-width: 641px)"
+								srcset="images/TP_Cover.webp"
+							/>
+							<img
+								id="project-img"
+								src="images/TP_Cover.jpg"
+								alt="project"
+								width="350"
+								height="350"
+								decoding="async"
+								loading="lazy"
+							/>
+						</picture>
+
 						<div id="o-four" class="overlay">
 							<h4>Sport Coach</h4>
 							<p>Design</p>
@@ -626,15 +685,20 @@
 						</p>
 					</div>
 					<div id="five" class="project develop games">
-						<img
-							id="project-img"
-							src="images/pig.jpg"
-							alt="project"
-							width="350"
-							height="350"
-							decoding="async"
-							loading="lazy"
-						/>
+						<picture>
+							<source media="(max-width: 640px)" srcset="images/pig-m.webp" />
+							<source media="(min-width: 641px)" srcset="images/pig.webp" />
+							<img
+								id="project-img"
+								src="images/pig.jpg"
+								alt="project"
+								width="350"
+								height="350"
+								decoding="async"
+								loading="lazy"
+							/>
+						</picture>
+
 						<div id="o-five" class="overlay">
 							<h4>Pig</h4>
 							<p>Develop</p>
@@ -671,15 +735,23 @@
 						<p>JavaScript, Git, and Netlify.</p>
 					</div>
 					<div id="six" class="project design develop">
-						<img
-							id="project-img"
-							src="images/laptop.jpg"
-							alt="project"
-							width="350"
-							height="350"
-							decoding="async"
-							loading="lazy"
-						/>
+						<picture>
+							<source
+								media="(max-width: 640px)"
+								srcset="images/laptop-m.webp"
+							/>
+							<source media="(min-width: 641px)" srcset="images/laptop.webp" />
+							<img
+								id="project-img"
+								src="images/laptop.jpg"
+								alt="project"
+								width="350"
+								height="350"
+								decoding="async"
+								loading="lazy"
+							/>
+						</picture>
+
 						<div id="o-six" class="overlay">
 							<h4>My Portfolio</h4>
 							<p>Design</p>
@@ -948,9 +1020,6 @@
 								required
 							></textarea>
 						</div>
-
-						<div class="re-captcha" data-netlify-recaptcha="true"></div>
-
 						<button
 							name="submit"
 							type="submit"
