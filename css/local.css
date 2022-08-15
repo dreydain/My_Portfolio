@@ -559,6 +559,9 @@
     margin-right: 1em;
     text-align: right;
   }
+  #contact .form-container #form .g-recaptcha {
+    float: right;
+  }
 }
 /* Mobile 512px + */
 @media only screen and (min-width: 32em) {
