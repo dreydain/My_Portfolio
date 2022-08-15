@@ -560,8 +560,9 @@
     text-align: right;
   }
   #contact .form-container #form .g-recaptcha {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     margin-left: 6em;
+    width: 50%;
   }
 }
 /* Mobile 512px + */
