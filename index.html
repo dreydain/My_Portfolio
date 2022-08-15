@@ -11,7 +11,10 @@
 			name="description"
 			content="Front-end and Full-Stack Developer. Currently developing with JavaScript and React, what can I help you build today?"
 		/>
-		<meta name="keywords" content="" />
+		<meta
+			name="keywords"
+			content="Full-Stack Developer, Front-End Developer, JavaScript, React"
+		/>
 
 		<!--Social Media Display-->
 		<meta
@@ -687,7 +690,7 @@
 				<div class="modal six-modal">
 					<button class="close-modal">&times;</button>
 					<div class="top">
-						<h3>Title</h3>
+						<h3>My Portfolio</h3>
 						<a aria-label="Check out my portfolio code." href="">Code</a>
 					</div>
 					<p>
@@ -895,45 +898,57 @@
 			<section id="contact">
 				<div class="text">
 					<h2>Contact Me</h2>
-					<h4>EMAIL:</h4>
-					<p>ahughes0389@gmail.com</p>
-					<h4>LOCATION:</h4>
-					<p>Greater Seattle, WA</p>
+					<div class="text-group">
+						<h4>EMAIL:</h4>
+						<p>ahughes0389@gmail.com</p>
+					</div>
+					<div class="text-group">
+						<h4>LOCATION:</h4>
+						<p>Greater Seattle, WA</p>
+					</div>
 				</div>
 				<div class="form-container">
 					<form id="form" name="Contact Form" method="POST" data-netlify="true">
-						<!-- <label for="name">Name</label> -->
-						<input
-							id="name"
-							aria-label="name"
-							class="input1"
-							name="name"
-							placeholder="Name"
-							type="text"
-							tabindex="1"
-							required
-						/>
-						<!-- <label for="email">Email</label> -->
-						<input
-							id="email"
-							aria-label="email"
-							class="input2"
-							name="email"
-							placeholder="Email"
-							type="email"
-							tabindex="2"
-							required
-						/>
+						<div class="row">
+							<label for="name">Name:</label>
+							<input
+								id="name"
+								aria-label="name"
+								class="input1"
+								name="name"
+								placeholder="Name"
+								type="text"
+								tabindex="1"
+								required
+							/>
+						</div>
 
-						<!-- <label for="message">Message</label> -->
-						<textarea
-							id="message"
-							aria-label="write your message"
-							name="message"
-							placeholder="Message"
-							tabindex="4"
-							required
-						></textarea>
+						<div class="row">
+							<label for="email">Email:</label>
+							<input
+								id="email"
+								aria-label="email"
+								class="input2"
+								name="email"
+								placeholder="Email"
+								type="email"
+								tabindex="2"
+								required
+							/>
+						</div>
+
+						<div class="row">
+							<label for="message">Message:</label>
+							<textarea
+								id="message"
+								aria-label="write your message"
+								name="message"
+								placeholder="Message"
+								tabindex="4"
+								required
+							></textarea>
+						</div>
+
 						<div data-netlify-recaptcha="true"></div>
 
 						<button

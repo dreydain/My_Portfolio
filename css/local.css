@@ -142,17 +142,14 @@
     font-weight: 300;
     margin: auto;
     padding-top: 1.5em;
-    max-width: 50vw;
+    max-width: 80vw;
   }
   #about .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 90vw;
     margin: 2em auto;
   }
   #about .text {
-    padding-left: 1.5em;
+    max-width: 80vw;
+    margin: auto;
     text-align: left;
   }
   #about .text #btn1 {
@@ -160,10 +157,27 @@
     margin-right: 0.75em;
   }
   #about #portrait {
-    max-width: 32vw;
-    max-height: 33vh;
+    width: 50vw;
+    height: 38vh;
     border-radius: 5%;
-    margin-top: 2em;
+    margin: 2em 0;
+  }
+}
+@media only screen and (min-width: 32em) {
+  #about .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 90vw;
+  }
+  #about .text {
+    max-width: 60vw;
+    margin-left: 1em;
+  }
+  #about #portrait {
+    width: 40vw;
+    height: 28vh;
+    border-radius: 5%;
   }
 }
 /* Tablet */
@@ -172,14 +186,11 @@
     font-size: inherit;
   }
   #about .qoute {
-    max-width: 60vw;
-  }
-  #about .container {
-    max-width: 85vw;
+    max-width: 70vw;
   }
   #about #portrait {
-    max-width: 40vw;
-    max-height: 41vh;
+    width: 50vw;
+    height: 50vh;
   }
 }
 /* Small Desktop */
@@ -187,19 +198,12 @@
   #about {
     font-size: 1.05em;
   }
-  #about .qoute {
-    max-width: 50vw;
-    margin: auto;
-  }
-  #about .container {
-    margin: 3em auto;
-    max-width: 70vw;
+  #about .text {
+    margin-left: 2em;
   }
   #about #portrait {
-    max-height: 25vw;
-  }
-  #about .text {
-    padding-left: 3em;
+    width: 50vw;
+    height: 65vh;
   }
 }
 /* Large Desktop */
@@ -207,15 +211,9 @@
   #about {
     font-size: 1.2em;
   }
-  #about .text {
-    max-width: 45vw;
-  }
-  #about #portrait {
-    max-height: 30vw;
-  }
 }
 /*-- -------------------------- -->
-<---           SKILLS         -->
+<---           SKILLS           -->
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
@@ -493,14 +491,7 @@
   #contact {
     background-color: #bf9b7a;
     color: #00060d;
-    text-align: left;
-    padding: 4em 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    padding: 3em 0;
   }
   #contact h2 {
     color: #fff;
@@ -509,22 +500,17 @@
     color: #323438;
   }
   #contact .text {
-    max-width: 30%;
-    margin: 1em 1.5em 1em 2em;
+    margin: 1em 5em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: left;
   }
   #contact .form-container {
-    min-width: 50%;
-    margin-top: 3.5em;
-    margin-right: 2em;
-  }
-  #contact .form-container #form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   #contact .form-container #form input {
     border-radius: 0.5em;
@@ -533,7 +519,6 @@
     padding: 0.25em;
   }
   #contact .form-container #form textarea {
-    min-height: 12vh;
     border-radius: 0.5em;
     padding: 0.25em;
     border: none;
@@ -543,9 +528,9 @@
     background-color: #f27405;
     font-size: 0.92857143em;
     border-style: none;
-    margin-left: 40%;
-    max-width: 60%;
+    max-width: 11em;
     cursor: pointer;
+    margin-left: 6em;
   }
   #contact .form-container #form ::-webkit-input-placeholder {
     font-size: 0.71428571em;
@@ -562,6 +547,34 @@
   #contact .form-container #form ::placeholder {
     font-size: 0.71428571em;
     font-family: 'Poppins', sans-serif;
+  }
+  #contact .form-container #form .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #contact .form-container #form .row label {
+    display: inline;
+    width: 5em;
+    margin-right: 1em;
+    text-align: right;
+  }
+}
+/* Mobile 512px + */
+@media only screen and (min-width: 32em) {
+  #contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #contact .text {
+    margin: 1em 2.5em;
+  }
+  #contact .form-container {
+    margin-top: 4em;
+  }
+  #contact .form-container #form textarea {
+    height: 12vh;
   }
 }
 /* Tablet */
@@ -569,12 +582,18 @@
   #contact {
     font-size: inherit;
   }
+  #contact .form-container {
+    width: 50%;
+    margin: 4em auto;
+  }
   #contact .form-container #form input {
-    padding: 0.5em;
+    width: 30vw;
   }
   #contact .form-container #form textarea {
-    min-height: 15vh;
-    padding: 0.5em;
+    width: 30vw;
+  }
+  #contact .form-container #form .btn {
+    margin-left: 35%;
   }
   #contact .form-container #form ::-webkit-input-placeholder {
     font-size: 1em;
@@ -587,10 +606,6 @@
   }
   #contact .form-container #form ::placeholder {
     font-size: 1em;
-  }
-  #contact .form-container #form .btn {
-    max-width: 50%;
-    margin-left: 50%;
   }
 }
 /* Small Desktop */
@@ -598,33 +613,20 @@
   #contact {
     font-size: inherit;
   }
-  #contact .text {
-    margin-left: 4.5em;
-  }
-  #contact .form-container {
-    margin-right: 4.5em;
-  }
-  #contact .form-container #form textarea {
-    min-height: 18vh;
-  }
-  #contact .form-container #form .btn {
-    max-width: 40%;
-    margin-left: 60%;
-  }
 }
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
   #contact {
     font-size: 1.2em;
+    padding: 3em 5em;
   }
-  #contact .form-container {
-    max-width: 25vw;
+  #contact .form-container #form input {
+    padding: 0.75em;
   }
-  #contact .form-container #form {
-    max-width: 35vw;
+  #contact .form-container #form textarea {
+    padding: 0.75em;
   }
   #contact .form-container #form .btn {
-    max-width: 40%;
     margin-left: 60%;
   }
   #contact .form-container #form ::-webkit-input-placeholder {
@@ -638,9 +640,6 @@
   }
   #contact .form-container #form ::placeholder {
     font-size: 1.28571429em;
-  }
-  #contact .form-container #form input {
-    padding: 0.75em;
   }
 }
 /*-- -------------------------- -->
