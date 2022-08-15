@@ -611,9 +611,6 @@
   #contact .form-container #form ::placeholder {
     font-size: 1em;
   }
-  #contact .form-container #form .g-recaptcha {
-    margin-left: 35%;
-  }
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
@@ -647,9 +644,6 @@
   }
   #contact .form-container #form ::placeholder {
     font-size: 1.28571429em;
-  }
-  #contact .form-container #form .g-recaptcha {
-    margin-left: 60%;
   }
 }
 /*-- -------------------------- -->
