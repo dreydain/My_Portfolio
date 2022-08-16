@@ -10,7 +10,7 @@ html {
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #7e8c4a;
+  background-color: #2e4734;
   font-size: 18px;
 }
 main {
@@ -99,7 +99,7 @@ p {
           transform: rotateY(360deg);
 }
 .wave-top .shape-fill {
-  fill: #7e8c4a;
+  fill: #2e4734;
 }
 .wave-bottom {
   position: relative;
@@ -118,7 +118,7 @@ p {
           transform: rotateY(360deg);
 }
 .wave-bottom .shape-fill {
-  fill: #7e8c4a;
+  fill: #2e4734;
 }
 .circle {
   margin-top: 0.5em;
