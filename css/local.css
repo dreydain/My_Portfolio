@@ -74,7 +74,7 @@
   #hero {
     position: relative;
     z-index: 1;
-    background: url('../images/header.jpg');
+    background: url('../images/header.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,9 +146,9 @@
   }
   #about .container {
     margin: 2em auto;
+    max-width: 90vw;
   }
   #about .text {
-    max-width: 80vw;
     margin: auto;
     text-align: left;
   }
@@ -157,10 +157,7 @@
     margin-right: 0.75em;
   }
   #about #portrait {
-    width: 50vw;
-    height: 38vh;
-    border-radius: 5%;
-    margin: 2em 0;
+    display: none;
   }
 }
 @media only screen and (min-width: 32em) {
@@ -175,9 +172,10 @@
     margin-left: 1em;
   }
   #about #portrait {
-    width: 40vw;
-    height: 28vh;
+    width: 30vw;
+    height: 30vh;
     border-radius: 5%;
+    display: block;
   }
 }
 /* Tablet */
@@ -189,8 +187,8 @@
     max-width: 70vw;
   }
   #about #portrait {
-    width: 50vw;
-    height: 50vh;
+    width: 35vw;
+    height: 35vh;
   }
 }
 /* Small Desktop */
@@ -202,8 +200,8 @@
     margin-left: 2em;
   }
   #about #portrait {
-    width: 50vw;
-    height: 65vh;
+    width: 38vw;
+    height: 38vh;
   }
 }
 /* Large Desktop */
@@ -220,7 +218,7 @@
   #skills {
     position: relative;
     z-index: 1;
-    background: url('../images/cutthroat.jpg');
+    background: url('../images/cutthroat.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
