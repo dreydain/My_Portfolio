@@ -121,7 +121,7 @@ p {
   fill: #2e4734;
 }
 .circle {
-  margin-top: 0.5em;
+  margin: 0.25em;
   padding-top: 0.3em;
   display: inline-block;
   background-color: rgba(102, 106, 115, 0.7);
