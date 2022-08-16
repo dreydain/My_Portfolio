@@ -503,10 +503,10 @@
     padding: 3em 0;
   }
   #contact h2 {
-    color: #fff;
+    color: #00060d;
   }
   #contact p {
-    color: #323438;
+    color: #00060d;
   }
   #contact .text {
     margin: 1em 5em;
@@ -658,19 +658,17 @@
 @media only screen and (min-width: 0em) {
   #footer {
     font-size: 0.65em;
-    background-color: #666a73;
+    background-color: #1c1c1d;
     text-align: center;
     color: #fff;
     padding-bottom: 1.5em;
   }
   #footer .circle {
     margin: 1em 0.2em;
-    background-color: #bf9b7a;
+    background-color: #f27405;
   }
-  #footer .circle:hover {
-    background-color: #83a603;
-    -webkit-transition: 2s ease;
-    transition: 2s ease;
+  #footer .circle a {
+    color: #00060d;
   }
   #footer ul li {
     display: inline-block;
