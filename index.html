@@ -30,16 +30,38 @@
 		<meta property="og:image" content="" />
 		<meta property="og:image:secure_url" content="" />
 
-		<!-- Style Sheets -->
+		<!-- CSS -->
 		<link rel="stylesheet" href="css/local.css" />
 		<link rel="stylesheet" href="css/root.css" />
 
+		<!-- Preload assets-->
+		<link
+			rel="preload"
+			as="font"
+			type="font/woff2"
+			href="fonts/poppins-v20-latin-300.woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			as="font"
+			type="font/woff2"
+			href="fonts/poppins-v20-latin-regular.woff2"
+			crossorigin
+		/>
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
+
+		<script defer src="ga.js"></script>
+
+		<script defer src="https://www.google-analytics.com/analytics.js"></script>
+
+		<!-- <script
 			async
+			defer
 			src="https://www.googletagmanager.com/gtag/js?id=G-08CEZR1YSM"
 		></script>
-		<script>
+		<script async defer>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
 				dataLayer.push(arguments);
@@ -47,7 +69,7 @@
 			gtag('js', new Date());
 
 			gtag('config', 'G-08CEZR1YSM');
-		</script>
+		</script> -->
 	</head>
 	<body>
 		<header>
