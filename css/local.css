@@ -198,8 +198,8 @@
     max-width: 70vw;
   }
   #about #portrait {
-    width: 35vw;
-    height: 35vh;
+    width: 30vw;
+    height: 45vh;
   }
 }
 /* Small Desktop */
@@ -211,14 +211,18 @@
     margin-left: 2em;
   }
   #about #portrait {
-    width: 38vw;
-    height: 38vh;
+    width: 30vw;
+    height: 50vh;
   }
 }
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
   #about {
     font-size: 1.2em;
+  }
+  #about #portrait {
+    width: 35vw;
+    height: 65vh;
   }
 }
 /*-- -------------------------- -->
